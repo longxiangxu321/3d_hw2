@@ -1,0 +1,3 @@
+/mnt/d/Q3/modelling/hw2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/Q3/modelling/hw2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/Q3/modelling/hw2/cmake-build-debug/CMakeFiles/hw02.dir
