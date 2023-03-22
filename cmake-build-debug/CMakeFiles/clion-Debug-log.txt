@@ -1,0 +1,16 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S "/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2" -B "/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug"
+-- Using header-only CGAL
+-- Targetting Unix Makefiles
+-- Using /Library/Developer/CommandLineTools/usr/bin/c++ compiler.
+-- DARWIN_VERSION=22
+-- Mac Leopard detected
+-- Boost include dirs: /opt/homebrew/include
+-- Boost libraries:    
+-- Build type: Release
+-- USING CXXFLAGS = '-O2 -O3 -DNDEBUG'
+-- USING EXEFLAGS = ' '
+-- CGAL::CGAL
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug

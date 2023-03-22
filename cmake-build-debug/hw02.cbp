@@ -5,167 +5,188 @@
 		<Option title="hw02"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\;CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\;CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\;CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\;CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.81.0\;CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.81.0\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/d/Q3/modelling/hw2/cmake-build-debug"/>
+				<Option working_dir="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/d/Q3/modelling/hw2/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/mnt/d/Q3/modelling/hw2/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="hw02">
-				<Option output="/mnt/d/Q3/modelling/hw2/cmake-build-debug/hw02" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/d/Q3/modelling/hw2/cmake-build-debug"/>
+				<Option output="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug/hw02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBOOST_ALL_NO_LIB"/>
-					<Add directory="/mnt/d/Q3/modelling/hw2/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add option="-DCGAL_USE_GMPXX=1"/>
+					<Add option="-DCGAL_EIGEN3_ENABLED"/>
+					<Add directory="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/include"/>
+					<Add directory="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug"/>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/opt/homebrew/include/eigen3"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw02"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw02"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="hw02/fast">
-				<Option output="/mnt/d/Q3/modelling/hw2/cmake-build-debug/hw02" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/d/Q3/modelling/hw2/cmake-build-debug"/>
+				<Option output="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug/hw02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBOOST_ALL_NO_LIB"/>
-					<Add directory="/mnt/d/Q3/modelling/hw2/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add option="-DCGAL_USE_GMPXX=1"/>
+					<Add option="-DCGAL_EIGEN3_ENABLED"/>
+					<Add directory="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/include"/>
+					<Add directory="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug"/>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/opt/homebrew/include/eigen3"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw02/fast"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/mnt/d/Q3/modelling/hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw02/fast"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/apple/Desktop/Q3/GEO1004-3D\ modelling\ of\ the\ built\ environment/Assignment/2/3d_hw2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/src/geomtools.cpp">
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/src/geomtools.cpp">
 			<Option target="hw02"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/src/geomtools.h">
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/src/geomtools.h">
 			<Option target="hw02"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/src/main.cpp">
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/src/main.cpp">
 			<Option target="hw02"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/CMakeLists.txt">
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGALConfig-installation-dirs.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGALConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGALConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGALConfigBuildVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_Common.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGALConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_CreateSingleSourceCGALProgram.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_Common.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_GeneratorSpecificSettings.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_CreateSingleSourceCGALProgram.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_Macros.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_Eigen3_support.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_SCM.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_GeneratorSpecificSettings.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_SetupBoost.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_Macros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_SetupCGALDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_SCM.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_SetupGMP.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_SetupBoost.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_TweakFindBoost.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_SetupCGALDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_VersionUtils.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_SetupGMP.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_add_test.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_TweakFindBoost.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_enable_end_of_configuration_hook.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_VersionUtils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_parse_version_h.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_add_test.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_setup_target_dependencies.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_display_flags.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_target_use_TBB.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_enable_end_of_configuration_hook.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/FindGMP.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_setup_target_dependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/FindMPFR.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/CGAL_target_use_TBB.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/FindEigen3.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/FindGMP.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/FindGMPXX.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
 		</Unit>
-		<Unit filename="/mnt/d/Q3/modelling/hw2/../../../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/FindMPFR.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/CGAL/UseCGAL.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/Boost-1.81.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.81.0\"/>
+		</Unit>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/Boost-1.81.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.81.0\"/>
+		</Unit>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/boost_headers-1.81.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.81.0\"/>
+		</Unit>
+		<Unit filename="/Users/apple/Desktop/Q3/GEO1004-3D modelling of the built environment/Assignment/2/3d_hw2/../../../../../../../../opt/homebrew/lib/cmake/boost_headers-1.81.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.81.0\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
