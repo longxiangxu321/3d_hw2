@@ -235,7 +235,7 @@ std::pair<std::vector<double>, std::vector<double>> calculate_volume_area(const 
 //
 //}
 double hemisphericality(double volume,double area){
-    double hem = 3 * sqrt(2*M_PI) * volume / pow(area,3/2);
+    double hem = (3 * sqrt(2*M_PI) * volume) / pow(area,1.5);
     return hem;
 }
 
@@ -299,7 +299,7 @@ double distance_to_center(double area,const std::vector<double> area_list,const 
 
 double Roughness_index(double volume,double area,const std::vector<double> area_list,const std::vector<std::vector<std::vector<int>>> trss,
                        const std::vector<Point3>& lspts){
-    double down = pow(area,3/2) + volume;
+    double down = pow(area, 1.5) + volume;
     double distance_sum = distance_to_center(area,area_list,trss,lspts);
     double ri = pow(distance_sum,3) * 48.735 /down;
     return ri;
@@ -316,8 +316,10 @@ double calculate_rectangularity(const std::vector<Point3> exterior_pts, double v
     double hight = sqrt(squared_distance(obb_points[7], obb_points[2]));
     double volume_oobb = length * width * hight;
 
-    // Compute the rectangularity
+    // compute the rectangularity
     double rectangularity = vol / volume_oobb;
+
+    // varify whether the rectangularity is in the interval of [0, 1]
     if (rectangularity > 1){
         std::cout << "Rectangularity is greater than 1" << std::endl;
     }
@@ -326,5 +328,58 @@ double calculate_rectangularity(const std::vector<Point3> exterior_pts, double v
     }
     else{
         return rectangularity;
+    }
+}
+
+std::string roof_orientation(const std::vector<int> tri, const std::vector<Point3>& lspts){
+    // compute the normal vector of the selected triangle
+    Point3 p1 = lspts[tri[0]];
+    Point3 p2 = lspts[tri[1]];
+    Point3 p3 = lspts[tri[2]];
+
+    Vector3 v1 = p2 - p1;
+    Vector3 v2 = p3 - p1;
+
+    Vector3 cross = CGAL::cross_product(v1, v2);
+
+    K::FT a = cross.x();
+    K::FT b = cross.y();
+
+    double cos = a / (sqrt(pow(a, 2) + pow(b, 2)));
+    double sin = b / (sqrt(pow(a, 2) + pow(b, 2)));
+    double tan = b / a;
+
+    if (tan >= 1 && cos > 0 && sin > 0){
+        return {"NE"};
+    }
+    else if (tan >= 1 && cos < 0 && sin < 0){
+        return {"SW"};
+    }
+    else if (0 <= tan && tan < 1 && cos > 0 && sin >= 0){
+        return {"EN"};
+    }
+    else if (0 <= tan && tan < 1 && cos < 0 && sin <= 0){
+        return {"WS"};
+    }
+    else if (0 > tan && tan >= -1 && cos > 0 && sin < 0){
+        return {"ES"};
+    }
+    else if (0 > tan && tan >= -1 && cos < 0 && sin > 0){
+        return {"WN"};
+    }
+    else if (tan < -1 && cos > 0 && sin < 0){
+        return {"SE"};
+    }
+    else if (cos == 0 && sin < 0){ // South
+        return {"SE"};
+    }
+    else if (tan < -1 && cos < 0 && sin > 0){
+        return {"NW"};
+    }
+    else if (cos == 0 && sin > 0){ // North
+        return {"NW"};
+    }
+    else if (a == 0 && b == 0){
+        return {"horizontal"};
     }
 }

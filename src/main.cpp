@@ -90,8 +90,13 @@ void enrich_and_save(std::string filename, json& j) {
                         std::vector<std::vector<int>> gb = g["boundaries"][i][j];
                         std::vector<std::vector<int>> trs = construct_ct_one_face(gb, lspts);
                         trss.push_back(trs);
+                        if (g["semantics"]["value"] == 1){ // extract roof surface ct
+                            std::string ori = roof_orientation(trs[0], lspts);
+//                            g["semantics"]["type"] = {"RoofSurface", ori};
+                        }
                     }
                 }
+                // for extracting the exterior of a building_part as an input for the obb function
                 for (auto & ex_faces : g["boundaries"][0]){ // extract the exterior shell only
                     for (auto & ex_face : ex_faces){  // iterate over each face of exterior shell
                         for (int i = 0; i < ex_face.size(); i++){ // iterate over the pt_index of each face
@@ -100,6 +105,7 @@ void enrich_and_save(std::string filename, json& j) {
                         }
                     }
                 }
+
                 std::pair<std::vector<double>, std::vector<double>> pair = calculate_volume_area(trss, lspts);
                 std::vector<double> vol = pair.first;
                 std::vector<double> area_list = pair.second;
@@ -114,6 +120,7 @@ void enrich_and_save(std::string filename, json& j) {
                 co.value()["attributes"]["rectangularity"] = rec;
                 co.value()["attributes"]["hemisphericality"] = hem;
                 co.value()["attributes"]["roughness"] = ri;
+
             }
         }
     }

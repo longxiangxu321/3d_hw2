@@ -25,3 +25,21 @@
 ```
 
 ![image-20230319175419932](./assets/image-20230319175419932.png)
+
+# 計算屋頂朝向
+
+擷取RoofSurface之cdt，選擇其中一個三角形，依照其normal vector 朝向標註orientation
+利用normal vector (x,y) 判斷方位
+![image-20230319175419932](./assets/S__3489797.jpg)
+
+
+```
+對每個building part:
+  篩選RoofSurface
+    for each pt of the RoofSurface
+      compute its best_fitting_plane
+      compute the normal vector of the best_fitting_plane
+      extract the x,y coordinate values of the normal vector to determine the orientation 
+      address the orientation
+
+```
