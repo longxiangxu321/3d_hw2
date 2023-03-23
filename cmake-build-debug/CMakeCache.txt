@@ -36,7 +36,7 @@ CGAL_CTEST_DISPLAY_MEM_AND_TIME:BOOL=OFF
 CGAL_DEV_MODE:BOOL=OFF
 
 //The directory containing a CMake configuration file for CGAL.
-CGAL_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/CGAL
+CGAL_DIR:PATH=/usr/local/lib/cmake/CGAL
 
 //If set, the ctest command will not skip the tests of the draw
 // functions.
@@ -258,6 +258,12 @@ EIGEN3_INCLUDE_DIR:PATH=/usr/include/eigen3
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
 
+//The directory containing the GMPXX include files
+GMPXX_INCLUDE_DIR:PATH=/usr/include
+
+//Path to the GMPXX library
+GMPXX_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libgmpxx.so
+
 //The directory containing the GMP header files
 GMP_INCLUDE_DIR:PATH=/usr/include/x86_64-linux-gnu
 
@@ -390,6 +396,10 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/mnt/d/Q3/modelling/hw2
@@ -456,15 +466,19 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Boost
-FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][c ][v1.71.0(1.48)]
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][c ][v1.71.0(1.66)]
 //Details about finding GMP
 FIND_PACKAGE_MESSAGE_DETAILS_GMP:INTERNAL=[/usr/lib/x86_64-linux-gnu/libgmp.so][/usr/include/x86_64-linux-gnu][v()]
 //Details about finding MPFR
 FIND_PACKAGE_MESSAGE_DETAILS_MPFR:INTERNAL=[/usr/lib/x86_64-linux-gnu/libmpfr.so][/usr/include][v()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: ProcessorCount_cmd_nproc
 ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+//Result of TRY_COMPILE
+THREADS_HAVE_PTHREAD_ARG:INTERNAL=TRUE
 //ADVANCED property for variable: boost_headers_DIR
 boost_headers_DIR-ADVANCED:INTERNAL=1
 

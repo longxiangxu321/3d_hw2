@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/hw02.dir/src/geomtools.cpp.o CMakeFiles/hw02.dir/src/main.cpp.o -o hw02  /usr/lib/x86_64-linux-gnu/libmpfr.so /usr/lib/x86_64-linux-gnu/libgmp.so 
+g++ -O2 -O3 -DNDEBUG CMakeFiles/hw02.dir/src/geomtools.cpp.o CMakeFiles/hw02.dir/src/main.cpp.o -o hw02  /usr/lib/x86_64-linux-gnu/libmpfr.so /usr/lib/x86_64-linux-gnu/libgmp.so -pthread 

@@ -73,29 +73,29 @@ CMakeFiles/hw02.dir/src/geomtools.cpp.o: CMakeFiles/hw02.dir/flags.make
 CMakeFiles/hw02.dir/src/geomtools.cpp.o: ../src/geomtools.cpp
 CMakeFiles/hw02.dir/src/geomtools.cpp.o: CMakeFiles/hw02.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Q3/modelling/hw2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hw02.dir/src/geomtools.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hw02.dir/src/geomtools.cpp.o -MF CMakeFiles/hw02.dir/src/geomtools.cpp.o.d -o CMakeFiles/hw02.dir/src/geomtools.cpp.o -c /mnt/d/Q3/modelling/hw2/src/geomtools.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hw02.dir/src/geomtools.cpp.o -MF CMakeFiles/hw02.dir/src/geomtools.cpp.o.d -o CMakeFiles/hw02.dir/src/geomtools.cpp.o -c /mnt/d/Q3/modelling/hw2/src/geomtools.cpp
 
 CMakeFiles/hw02.dir/src/geomtools.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw02.dir/src/geomtools.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Q3/modelling/hw2/src/geomtools.cpp > CMakeFiles/hw02.dir/src/geomtools.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Q3/modelling/hw2/src/geomtools.cpp > CMakeFiles/hw02.dir/src/geomtools.cpp.i
 
 CMakeFiles/hw02.dir/src/geomtools.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw02.dir/src/geomtools.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Q3/modelling/hw2/src/geomtools.cpp -o CMakeFiles/hw02.dir/src/geomtools.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Q3/modelling/hw2/src/geomtools.cpp -o CMakeFiles/hw02.dir/src/geomtools.cpp.s
 
 CMakeFiles/hw02.dir/src/main.cpp.o: CMakeFiles/hw02.dir/flags.make
 CMakeFiles/hw02.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/hw02.dir/src/main.cpp.o: CMakeFiles/hw02.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Q3/modelling/hw2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hw02.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hw02.dir/src/main.cpp.o -MF CMakeFiles/hw02.dir/src/main.cpp.o.d -o CMakeFiles/hw02.dir/src/main.cpp.o -c /mnt/d/Q3/modelling/hw2/src/main.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hw02.dir/src/main.cpp.o -MF CMakeFiles/hw02.dir/src/main.cpp.o.d -o CMakeFiles/hw02.dir/src/main.cpp.o -c /mnt/d/Q3/modelling/hw2/src/main.cpp
 
 CMakeFiles/hw02.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw02.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Q3/modelling/hw2/src/main.cpp > CMakeFiles/hw02.dir/src/main.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Q3/modelling/hw2/src/main.cpp > CMakeFiles/hw02.dir/src/main.cpp.i
 
 CMakeFiles/hw02.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw02.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Q3/modelling/hw2/src/main.cpp -o CMakeFiles/hw02.dir/src/main.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Q3/modelling/hw2/src/main.cpp -o CMakeFiles/hw02.dir/src/main.cpp.s
 
 # Object files for target hw02
 hw02_OBJECTS = \

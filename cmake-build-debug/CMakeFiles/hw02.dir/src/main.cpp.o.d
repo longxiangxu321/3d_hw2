@@ -25,7 +25,8 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/c++/9/exception /usr/include/c++/9/bits/exception.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h /usr/include/c++/9/exception \
+ /usr/include/c++/9/bits/exception.h \
  /usr/include/c++/9/bits/exception_ptr.h \
  /usr/include/c++/9/bits/exception_defines.h \
  /usr/include/c++/9/bits/cxxabi_init_exception.h \
@@ -105,7 +106,10 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/select2.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/9/bits/std_abs.h /usr/include/c++/9/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
@@ -113,9 +117,10 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/c++/9/cerrno /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/9/cerrno \
+ /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/9/bits/functional_hash.h \
@@ -149,6 +154,7 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h \
  /usr/include/c++/9/limits /usr/include/c++/9/bits/random.h \
  /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h \
@@ -159,11 +165,11 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/c++/9/bits/random.tcc /usr/include/c++/9/numeric \
  /usr/include/c++/9/bits/stl_numeric.h \
  /mnt/d/Q3/modelling/hw2/src/definitions.h \
- /usr/include/CGAL/Exact_predicates_inexact_constructions_kernel.h \
- /usr/include/CGAL/Simple_cartesian.h \
- /usr/include/CGAL/Cartesian/Cartesian_base.h /usr/include/CGAL/basic.h \
- /usr/include/CGAL/config.h /usr/include/boost/config.hpp \
- /usr/include/boost/config/user.hpp \
+ /usr/local/include/CGAL/Exact_predicates_inexact_constructions_kernel.h \
+ /usr/local/include/CGAL/Simple_cartesian.h \
+ /usr/local/include/CGAL/Cartesian/Cartesian_base.h \
+ /usr/local/include/CGAL/basic.h /usr/local/include/CGAL/config.h \
+ /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp /usr/include/c++/9/cstddef \
  /usr/include/boost/config/detail/select_stdlib_config.hpp \
@@ -173,19 +179,22 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/boost/config/detail/select_platform_config.hpp \
  /usr/include/boost/config/platform/linux.hpp \
  /usr/include/boost/config/detail/posix_features.hpp \
  /usr/include/boost/config/detail/suffix.hpp \
  /usr/include/boost/config/helper_macros.hpp \
- /usr/include/boost/version.hpp /usr/include/CGAL/version.h \
- /usr/include/CGAL/version_macros.h \
- /usr/include/CGAL/internal/enable_third_party_libraries.h \
- /usr/include/CGAL/export/CGAL.h /usr/include/CGAL/export/helpers.h \
- /usr/include/CGAL/functional.h /usr/include/CGAL/auto_link/CGAL.h \
- /usr/include/CGAL/auto_link/auto_link.h /usr/include/boost/predef.h \
- /usr/include/boost/predef/language.h \
+ /usr/include/boost/version.hpp /usr/local/include/CGAL/version.h \
+ /usr/local/include/CGAL/version_macros.h \
+ /usr/local/include/CGAL/Installation/internal/enable_third_party_libraries.h \
+ /usr/local/include/CGAL/export/CGAL.h \
+ /usr/local/include/CGAL/export/helpers.h \
+ /usr/local/include/CGAL/functional.h \
+ /usr/local/include/CGAL/auto_link/CGAL.h \
+ /usr/local/include/CGAL/auto_link/auto_link.h \
+ /usr/include/boost/predef.h /usr/include/boost/predef/language.h \
  /usr/include/boost/predef/language/stdc.h \
  /usr/include/boost/predef/version_number.h \
  /usr/include/boost/predef/make.h /usr/include/boost/predef/detail/test.h \
@@ -326,86 +335,42 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/c++/9/bits/erase_if.h /usr/include/c++/9/unordered_map \
  /usr/include/c++/9/bits/unordered_map.h /usr/include/c++/9/functional \
  /usr/include/c++/9/bits/refwrap.h /usr/include/c++/9/bits/std_function.h \
- /usr/include/CGAL/license/lgpl.h /usr/include/CGAL/license.h \
- /usr/include/CGAL/result_of.h /usr/include/CGAL/disable_warnings.h \
- /usr/include/boost/utility/result_of.hpp \
- /usr/include/boost/preprocessor/cat.hpp \
- /usr/include/boost/preprocessor/config/config.hpp \
- /usr/include/boost/preprocessor/iteration/iterate.hpp \
- /usr/include/boost/preprocessor/arithmetic/dec.hpp \
- /usr/include/boost/preprocessor/arithmetic/inc.hpp \
- /usr/include/boost/preprocessor/array/elem.hpp \
- /usr/include/boost/preprocessor/array/data.hpp \
- /usr/include/boost/preprocessor/tuple/elem.hpp \
- /usr/include/boost/preprocessor/facilities/expand.hpp \
- /usr/include/boost/preprocessor/facilities/overload.hpp \
- /usr/include/boost/preprocessor/variadic/size.hpp \
- /usr/include/boost/preprocessor/tuple/rem.hpp \
- /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
- /usr/include/boost/preprocessor/variadic/elem.hpp \
- /usr/include/boost/preprocessor/array/size.hpp \
- /usr/include/boost/preprocessor/slot/slot.hpp \
- /usr/include/boost/preprocessor/slot/detail/def.hpp \
- /usr/include/boost/preprocessor/repetition/enum_params.hpp \
- /usr/include/boost/preprocessor/punctuation/comma_if.hpp \
- /usr/include/boost/preprocessor/control/if.hpp \
- /usr/include/boost/preprocessor/control/iif.hpp \
- /usr/include/boost/preprocessor/logical/bool.hpp \
- /usr/include/boost/preprocessor/facilities/empty.hpp \
- /usr/include/boost/preprocessor/punctuation/comma.hpp \
- /usr/include/boost/preprocessor/repetition/repeat.hpp \
- /usr/include/boost/preprocessor/debug/error.hpp \
- /usr/include/boost/preprocessor/detail/auto_rec.hpp \
- /usr/include/boost/preprocessor/tuple/eat.hpp \
- /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp \
- /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
- /usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp \
- /usr/include/boost/preprocessor/facilities/intercept.hpp \
- /usr/include/boost/detail/workaround.hpp \
- /usr/include/boost/config/workaround.hpp \
- /usr/include/boost/type_traits/is_class.hpp \
- /usr/include/boost/type_traits/detail/config.hpp \
- /usr/include/boost/type_traits/intrinsics.hpp \
- /usr/include/boost/type_traits/integral_constant.hpp \
- /usr/include/boost/type_traits/is_pointer.hpp \
- /usr/include/boost/type_traits/is_member_function_pointer.hpp \
- /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
- /usr/include/boost/type_traits/remove_cv.hpp \
- /usr/include/boost/type_traits/remove_reference.hpp \
- /usr/include/boost/type_traits/declval.hpp \
- /usr/include/boost/type_traits/add_rvalue_reference.hpp \
- /usr/include/boost/type_traits/is_void.hpp \
- /usr/include/boost/type_traits/is_reference.hpp \
- /usr/include/boost/type_traits/is_lvalue_reference.hpp \
- /usr/include/boost/type_traits/is_rvalue_reference.hpp \
- /usr/include/boost/type_traits/conditional.hpp \
- /usr/include/boost/type_traits/type_identity.hpp \
- /usr/include/boost/core/enable_if.hpp \
- /usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
- /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
- /usr/include/boost/preprocessor/slot/detail/shared.hpp \
- /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
- /usr/include/boost/utility/detail/result_of_iterate.hpp \
- /usr/include/CGAL/enable_warnings.h /usr/include/CGAL/assertions.h \
- /usr/include/CGAL/Uncertain.h /usr/include/CGAL/enum.h \
- /usr/include/CGAL/Kernel/Same_uncertainty.h /usr/include/CGAL/Origin.h \
- /usr/include/CGAL/Origin_impl.h /usr/include/CGAL/Profile_counter.h \
- /usr/include/c++/9/sstream /usr/include/c++/9/bits/sstream.tcc \
- /usr/include/c++/9/iomanip /usr/include/c++/9/locale \
- /usr/include/c++/9/bits/locale_facets_nonio.h /usr/include/c++/9/ctime \
+ /usr/include/c++/9/thread /usr/include/c++/9/chrono \
+ /usr/include/c++/9/ratio /usr/include/c++/9/ctime \
+ /usr/include/c++/9/bits/parse_numbers.h /usr/include/c++/9/memory \
+ /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/9/ext/concurrence.h \
+ /usr/include/c++/9/bits/unique_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr_base.h \
+ /usr/include/c++/9/bits/allocated_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr_atomic.h \
+ /usr/include/c++/9/bits/atomic_base.h \
+ /usr/include/c++/9/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/9/backward/auto_ptr.h /usr/include/c++/9/atomic \
+ /usr/local/include/CGAL/license/lgpl.h /usr/local/include/CGAL/license.h \
+ /usr/local/include/CGAL/assertions.h /usr/local/include/CGAL/Uncertain.h \
+ /usr/local/include/CGAL/enum.h \
+ /usr/local/include/CGAL/Kernel/Same_uncertainty.h \
+ /usr/local/include/CGAL/Origin.h /usr/local/include/CGAL/Origin_impl.h \
+ /usr/local/include/CGAL/Profile_counter.h /usr/include/c++/9/sstream \
+ /usr/include/c++/9/bits/sstream.tcc /usr/include/c++/9/iomanip \
+ /usr/include/c++/9/locale /usr/include/c++/9/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/9/bits/locale_facets_nonio.tcc \
  /usr/include/c++/9/bits/locale_conv.h \
- /usr/include/c++/9/bits/unique_ptr.h \
  /usr/include/c++/9/bits/quoted_string.h /usr/include/c++/9/map \
  /usr/include/c++/9/bits/stl_tree.h /usr/include/c++/9/bits/stl_map.h \
  /usr/include/c++/9/bits/stl_multimap.h \
- /usr/include/CGAL/assertions_impl.h \
- /usr/include/CGAL/assertions_behaviour.h /usr/include/CGAL/exceptions.h \
- /usr/include/boost/lexical_cast.hpp \
+ /usr/local/include/CGAL/disable_warnings.h \
+ /usr/local/include/CGAL/enable_warnings.h \
+ /usr/local/include/CGAL/assertions_impl.h \
+ /usr/local/include/CGAL/assertions_behaviour.h \
+ /usr/local/include/CGAL/exceptions.h /usr/include/boost/lexical_cast.hpp \
  /usr/include/boost/range/iterator_range_core.hpp \
- /usr/include/boost/assert.hpp \
+ /usr/include/boost/detail/workaround.hpp \
+ /usr/include/boost/config/workaround.hpp /usr/include/boost/assert.hpp \
  /usr/include/boost/iterator/iterator_traits.hpp \
  /usr/include/boost/iterator/iterator_facade.hpp \
  /usr/include/boost/iterator/interoperable.hpp \
@@ -433,6 +398,8 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/mpl/aux_/config/nttp.hpp \
  /usr/include/boost/mpl/aux_/integral_wrapper.hpp \
  /usr/include/boost/mpl/aux_/static_cast.hpp \
+ /usr/include/boost/preprocessor/cat.hpp \
+ /usr/include/boost/preprocessor/config/config.hpp \
  /usr/include/boost/mpl/aux_/lambda_arity_param.hpp \
  /usr/include/boost/mpl/aux_/template_arity_fwd.hpp \
  /usr/include/boost/mpl/aux_/arity.hpp \
@@ -440,8 +407,19 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/mpl/aux_/preprocessor/params.hpp \
  /usr/include/boost/mpl/aux_/config/preprocessor.hpp \
  /usr/include/boost/preprocessor/comma_if.hpp \
+ /usr/include/boost/preprocessor/punctuation/comma_if.hpp \
+ /usr/include/boost/preprocessor/control/if.hpp \
+ /usr/include/boost/preprocessor/control/iif.hpp \
+ /usr/include/boost/preprocessor/logical/bool.hpp \
+ /usr/include/boost/preprocessor/facilities/empty.hpp \
+ /usr/include/boost/preprocessor/punctuation/comma.hpp \
  /usr/include/boost/preprocessor/repeat.hpp \
+ /usr/include/boost/preprocessor/repetition/repeat.hpp \
+ /usr/include/boost/preprocessor/debug/error.hpp \
+ /usr/include/boost/preprocessor/detail/auto_rec.hpp \
+ /usr/include/boost/preprocessor/tuple/eat.hpp \
  /usr/include/boost/preprocessor/inc.hpp \
+ /usr/include/boost/preprocessor/arithmetic/inc.hpp \
  /usr/include/boost/mpl/aux_/preprocessor/enum.hpp \
  /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp \
  /usr/include/boost/mpl/limits/arity.hpp \
@@ -451,6 +429,7 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/preprocessor/facilities/identity.hpp \
  /usr/include/boost/preprocessor/empty.hpp \
  /usr/include/boost/preprocessor/arithmetic/add.hpp \
+ /usr/include/boost/preprocessor/arithmetic/dec.hpp \
  /usr/include/boost/preprocessor/control/while.hpp \
  /usr/include/boost/preprocessor/list/fold_left.hpp \
  /usr/include/boost/preprocessor/list/detail/fold_left.hpp \
@@ -463,6 +442,13 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/preprocessor/list/detail/fold_right.hpp \
  /usr/include/boost/preprocessor/list/reverse.hpp \
  /usr/include/boost/preprocessor/control/detail/while.hpp \
+ /usr/include/boost/preprocessor/tuple/elem.hpp \
+ /usr/include/boost/preprocessor/facilities/expand.hpp \
+ /usr/include/boost/preprocessor/facilities/overload.hpp \
+ /usr/include/boost/preprocessor/variadic/size.hpp \
+ /usr/include/boost/preprocessor/tuple/rem.hpp \
+ /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
+ /usr/include/boost/preprocessor/variadic/elem.hpp \
  /usr/include/boost/preprocessor/arithmetic/sub.hpp \
  /usr/include/boost/mpl/aux_/config/eti.hpp \
  /usr/include/boost/mpl/aux_/config/overload_resolution.hpp \
@@ -472,7 +458,17 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/preprocessor/stringize.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp \
  /usr/include/boost/type_traits/is_convertible.hpp \
+ /usr/include/boost/type_traits/intrinsics.hpp \
+ /usr/include/boost/type_traits/detail/config.hpp \
+ /usr/include/boost/type_traits/integral_constant.hpp \
  /usr/include/boost/type_traits/is_complete.hpp \
+ /usr/include/boost/type_traits/declval.hpp \
+ /usr/include/boost/type_traits/add_rvalue_reference.hpp \
+ /usr/include/boost/type_traits/is_void.hpp \
+ /usr/include/boost/type_traits/is_reference.hpp \
+ /usr/include/boost/type_traits/is_lvalue_reference.hpp \
+ /usr/include/boost/type_traits/is_rvalue_reference.hpp \
+ /usr/include/boost/type_traits/remove_reference.hpp \
  /usr/include/boost/type_traits/is_function.hpp \
  /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp \
  /usr/include/boost/type_traits/detail/yes_no_type.hpp \
@@ -509,8 +505,13 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/type_traits/is_same.hpp \
  /usr/include/boost/type_traits/is_const.hpp \
  /usr/include/boost/detail/indirect_traits.hpp \
+ /usr/include/boost/type_traits/is_pointer.hpp \
+ /usr/include/boost/type_traits/is_class.hpp \
  /usr/include/boost/type_traits/is_volatile.hpp \
+ /usr/include/boost/type_traits/is_member_function_pointer.hpp \
+ /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
  /usr/include/boost/type_traits/is_member_pointer.hpp \
+ /usr/include/boost/type_traits/remove_cv.hpp \
  /usr/include/boost/type_traits/remove_pointer.hpp \
  /usr/include/boost/detail/select_type.hpp \
  /usr/include/boost/iterator/detail/enable_if.hpp \
@@ -531,6 +532,11 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/mpl/aux_/type_wrapper.hpp \
  /usr/include/boost/mpl/aux_/config/has_xxx.hpp \
  /usr/include/boost/mpl/aux_/config/msvc_typename.hpp \
+ /usr/include/boost/preprocessor/array/elem.hpp \
+ /usr/include/boost/preprocessor/array/data.hpp \
+ /usr/include/boost/preprocessor/array/size.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_params.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp \
  /usr/include/boost/mpl/aux_/config/has_apply.hpp \
  /usr/include/boost/mpl/aux_/msvc_never_true.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp \
@@ -564,17 +570,21 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/range/detail/implementation_help.hpp \
  /usr/include/boost/range/detail/common.hpp \
  /usr/include/boost/range/detail/sfinae.hpp /usr/include/string.h \
- /usr/include/strings.h /usr/include/boost/range/size.hpp \
- /usr/include/boost/range/size_type.hpp \
+ /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+ /usr/include/boost/range/size.hpp /usr/include/boost/range/size_type.hpp \
  /usr/include/boost/range/difference_type.hpp \
  /usr/include/boost/range/has_range_iterator.hpp \
  /usr/include/boost/utility/enable_if.hpp \
+ /usr/include/boost/core/enable_if.hpp \
  /usr/include/boost/range/concepts.hpp \
  /usr/include/boost/concept_check.hpp \
  /usr/include/boost/concept/assert.hpp \
  /usr/include/boost/concept/detail/general.hpp \
  /usr/include/boost/concept/detail/backward_compatibility.hpp \
  /usr/include/boost/concept/detail/has_constraints.hpp \
+ /usr/include/boost/type_traits/conditional.hpp \
  /usr/include/boost/type_traits/conversion_traits.hpp \
  /usr/include/boost/concept/usage.hpp \
  /usr/include/boost/concept/detail/concept_def.hpp \
@@ -605,6 +615,7 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/range/detail/has_member_size.hpp \
  /usr/include/boost/cstdint.hpp /usr/include/boost/utility.hpp \
  /usr/include/boost/utility/base_from_member.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
  /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp \
  /usr/include/boost/utility/binary.hpp \
  /usr/include/boost/preprocessor/control/deduce_d.hpp \
@@ -641,6 +652,7 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/exception/exception.hpp \
  /usr/include/boost/current_function.hpp \
  /usr/include/boost/lexical_cast/try_lexical_convert.hpp \
+ /usr/include/boost/type_traits/type_identity.hpp \
  /usr/include/boost/lexical_cast/detail/is_character.hpp \
  /usr/include/boost/lexical_cast/detail/converter_numeric.hpp \
  /usr/include/boost/type_traits/is_base_of.hpp \
@@ -843,43 +855,62 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/math/tools/real_cast.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/quadmath.h \
  /usr/include/boost/integer.hpp /usr/include/boost/integer_fwd.hpp \
- /usr/include/boost/detail/basic_pointerbuf.hpp /usr/include/CGAL/tags.h \
- /usr/include/CGAL/IO/io_tags.h /usr/include/CGAL/number_type_basic.h \
- /usr/include/CGAL/number_type_config.h /usr/include/CGAL/Quotient_fwd.h \
- /usr/include/CGAL/Kernel/mpl.h /usr/include/CGAL/Coercion_traits.h \
- /usr/include/CGAL/boost/iterator/transform_iterator.hpp \
+ /usr/include/boost/detail/basic_pointerbuf.hpp \
+ /usr/local/include/CGAL/tags.h /usr/local/include/CGAL/IO/io_tags.h \
+ /usr/local/include/CGAL/number_type_basic.h \
+ /usr/local/include/CGAL/number_type_config.h \
+ /usr/local/include/CGAL/Quotient_fwd.h \
+ /usr/local/include/CGAL/Kernel/mpl.h \
+ /usr/local/include/CGAL/Coercion_traits.h \
+ /usr/local/include/CGAL/boost/iterator/transform_iterator.hpp \
  /usr/include/boost/iterator/transform_iterator.hpp \
- /usr/include/CGAL/Algebraic_structure_traits.h \
- /usr/include/CGAL/type_traits.h /usr/include/CGAL/use.h \
- /usr/include/CGAL/Real_embeddable_traits.h \
- /usr/include/CGAL/Fraction_traits.h /usr/include/CGAL/Rational_traits.h \
- /usr/include/CGAL/is_convertible.h \
- /usr/include/CGAL/Scalar_factor_traits.h \
- /usr/include/CGAL/Algebraic_extension_traits.h \
- /usr/include/CGAL/Needs_parens_as_product.h /usr/include/CGAL/IO/io.h \
- /usr/include/CGAL/IO/Color.h /usr/include/CGAL/array.h \
- /usr/include/CGAL/IO/io_impl.h /usr/include/CGAL/utils_classes.h \
- /usr/include/CGAL/utils.h /usr/include/CGAL/FPU.h \
+ /usr/include/boost/utility/result_of.hpp \
+ /usr/include/boost/preprocessor/iteration/iterate.hpp \
+ /usr/include/boost/preprocessor/slot/slot.hpp \
+ /usr/include/boost/preprocessor/slot/detail/def.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp \
+ /usr/include/boost/preprocessor/facilities/intercept.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
+ /usr/include/boost/preprocessor/slot/detail/shared.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
+ /usr/include/boost/utility/detail/result_of_iterate.hpp \
+ /usr/local/include/CGAL/Algebraic_structure_traits.h \
+ /usr/local/include/CGAL/type_traits.h /usr/local/include/CGAL/use.h \
+ /usr/local/include/CGAL/Real_embeddable_traits.h \
+ /usr/local/include/CGAL/Fraction_traits.h \
+ /usr/local/include/CGAL/Rational_traits.h \
+ /usr/local/include/CGAL/is_convertible.h \
+ /usr/local/include/CGAL/Scalar_factor_traits.h \
+ /usr/local/include/CGAL/Algebraic_extension_traits.h \
+ /usr/local/include/CGAL/Needs_parens_as_product.h \
+ /usr/local/include/CGAL/IO/io.h /usr/local/include/CGAL/IO/Color.h \
+ /usr/local/include/CGAL/array.h /usr/local/include/CGAL/utils_classes.h \
+ /usr/local/include/CGAL/utils.h /usr/local/include/CGAL/FPU.h \
  /usr/include/c++/9/fenv.h /usr/include/fenv.h \
  /usr/include/x86_64-linux-gnu/bits/fenv.h \
+ /usr/include/x86_64-linux-gnu/bits/fenvinline.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/mm_malloc.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/emmintrin.h \
- /usr/include/CGAL/test_FPU_rounding_mode_impl.h \
- /usr/include/CGAL/float.h /usr/include/CGAL/double.h \
- /usr/include/CGAL/number_utils.h /usr/include/CGAL/long_double.h \
- /usr/include/CGAL/Interval_nt.h /usr/include/CGAL/Interval_traits.h \
- /usr/include/boost/operators.hpp /usr/include/CGAL/int.h \
- /usr/include/CGAL/Modular_traits.h \
- /usr/include/CGAL/Modular_arithmetic/Residue_type.h \
- /usr/include/CGAL/tss.h /usr/include/CGAL/long_long.h \
- /usr/include/CGAL/number_utils_classes.h \
- /usr/include/CGAL/kernel_basic.h /usr/include/CGAL/kernel_config.h \
- /usr/include/CGAL/kernel_assertions.h \
- /usr/include/CGAL/aff_transformation_tags.h \
- /usr/include/CGAL/aff_transformation_tags_impl.h \
- /usr/include/CGAL/Object.h /usr/include/boost/variant.hpp \
+ /usr/local/include/CGAL/test_FPU_rounding_mode_impl.h \
+ /usr/local/include/CGAL/float.h /usr/local/include/CGAL/double.h \
+ /usr/local/include/CGAL/number_utils.h \
+ /usr/local/include/CGAL/long_double.h \
+ /usr/local/include/CGAL/Interval_nt.h \
+ /usr/local/include/CGAL/Interval_traits.h \
+ /usr/include/boost/operators.hpp /usr/local/include/CGAL/int.h \
+ /usr/local/include/CGAL/Modular_traits.h \
+ /usr/local/include/CGAL/Modular_arithmetic/Residue_type.h \
+ /usr/local/include/CGAL/tss.h /usr/local/include/CGAL/long_long.h \
+ /usr/local/include/CGAL/number_utils_classes.h \
+ /usr/local/include/CGAL/kernel_basic.h \
+ /usr/local/include/CGAL/kernel_config.h \
+ /usr/local/include/CGAL/kernel_assertions.h \
+ /usr/local/include/CGAL/aff_transformation_tags.h \
+ /usr/local/include/CGAL/aff_transformation_tags_impl.h \
+ /usr/local/include/CGAL/Object.h /usr/include/boost/variant.hpp \
  /usr/include/boost/variant/variant.hpp /usr/include/boost/type_index.hpp \
  /usr/include/boost/type_index/stl_type_index.hpp \
  /usr/include/boost/type_index/type_index_facade.hpp \
@@ -929,15 +960,6 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/move/detail/to_raw_pointer.hpp \
  /usr/include/boost/move/detail/pointer_element.hpp \
  /usr/include/boost/core/no_exceptions_support.hpp \
- /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
- /usr/include/c++/9/ext/concurrence.h \
- /usr/include/c++/9/bits/shared_ptr.h \
- /usr/include/c++/9/bits/shared_ptr_base.h \
- /usr/include/c++/9/bits/allocated_ptr.h \
- /usr/include/c++/9/bits/shared_ptr_atomic.h \
- /usr/include/c++/9/bits/atomic_base.h \
- /usr/include/c++/9/bits/atomic_lockfree_defines.h \
- /usr/include/c++/9/backward/auto_ptr.h \
  /usr/include/boost/move/adl_move_swap.hpp \
  /usr/include/boost/variant/detail/make_variant_list.hpp \
  /usr/include/boost/variant/detail/over_sequence.hpp \
@@ -1023,64 +1045,160 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/optional/detail/optional_reference_spec.hpp \
  /usr/include/boost/optional/detail/optional_relops.hpp \
  /usr/include/boost/optional/detail/optional_swap.hpp \
- /usr/include/boost/any.hpp /usr/include/boost/shared_ptr.hpp \
- /usr/include/boost/smart_ptr/shared_ptr.hpp \
- /usr/include/boost/config/no_tr1/memory.hpp \
- /usr/include/boost/smart_ptr/detail/shared_count.hpp \
- /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
- /usr/include/boost/smart_ptr/detail/sp_counted_base.hpp \
- /usr/include/boost/smart_ptr/detail/sp_has_sync.hpp \
- /usr/include/boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp \
- /usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
- /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
- /usr/include/c++/9/atomic \
- /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
- /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
- /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
- /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
- /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp \
- /usr/include/boost/smart_ptr/detail/spinlock.hpp \
- /usr/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp \
- /usr/include/boost/smart_ptr/detail/yield_k.hpp \
- /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
- /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
- /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
- /usr/include/CGAL/Kernel_traits.h /usr/include/CGAL/Kernel_traits_fwd.h \
- /usr/include/CGAL/basic_classes.h /usr/include/CGAL/Bbox_2.h \
- /usr/include/CGAL/Dimension.h \
+ /usr/include/boost/any.hpp /usr/local/include/CGAL/Kernel_traits.h \
+ /usr/local/include/CGAL/Kernel_traits_fwd.h \
+ /usr/local/include/CGAL/basic_classes.h /usr/local/include/CGAL/Bbox_2.h \
+ /usr/local/include/CGAL/Dimension.h /usr/include/eigen3/Eigen/Core \
+ /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
+ /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
+ /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+ /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
+ /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
+ /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
+ /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
+ /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
+ /usr/include/eigen3/Eigen/src/Core/util/Memory.h \
+ /usr/include/eigen3/Eigen/src/Core/NumTraits.h \
+ /usr/include/eigen3/Eigen/src/Core/MathFunctions.h \
+ /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
+ /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Half.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/TypeCasting.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h \
+ /usr/include/eigen3/Eigen/src/Core/IO.h \
+ /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
+ /usr/include/eigen3/Eigen/src/Core/DenseBase.h \
+ /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
+ /usr/include/eigen3/Eigen/src/Core/MatrixBase.h \
+ /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/Core/EigenBase.h \
+ /usr/include/eigen3/Eigen/src/Core/Product.h \
+ /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
+ /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
+ /usr/include/eigen3/Eigen/src/Core/Assign.h \
+ /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
+ /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
+ /usr/include/eigen3/Eigen/src/Core/DenseStorage.h \
+ /usr/include/eigen3/Eigen/src/Core/NestByValue.h \
+ /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h \
+ /usr/include/eigen3/Eigen/src/Core/NoAlias.h \
+ /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
+ /usr/include/eigen3/Eigen/src/Core/Matrix.h \
+ /usr/include/eigen3/Eigen/src/Core/Array.h \
+ /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
+ /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
+ /usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
+ /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
+ /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
+ /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
+ /usr/include/eigen3/Eigen/src/Core/Dot.h \
+ /usr/include/eigen3/Eigen/src/Core/StableNorm.h \
+ /usr/include/eigen3/Eigen/src/Core/Stride.h \
+ /usr/include/eigen3/Eigen/src/Core/MapBase.h \
+ /usr/include/eigen3/Eigen/src/Core/Map.h \
+ /usr/include/eigen3/Eigen/src/Core/Ref.h \
+ /usr/include/eigen3/Eigen/src/Core/Block.h \
+ /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
+ /usr/include/eigen3/Eigen/src/Core/Transpose.h \
+ /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/Diagonal.h \
+ /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
+ /usr/include/eigen3/Eigen/src/Core/Redux.h \
+ /usr/include/eigen3/Eigen/src/Core/Visitor.h \
+ /usr/include/eigen3/Eigen/src/Core/Fuzzy.h \
+ /usr/include/eigen3/Eigen/src/Core/Swap.h \
+ /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h \
+ /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h \
+ /usr/include/eigen3/Eigen/src/Core/Solve.h \
+ /usr/include/eigen3/Eigen/src/Core/Inverse.h \
+ /usr/include/eigen3/Eigen/src/Core/SolverBase.h \
+ /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/Transpositions.h \
+ /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
+ /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+ /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
+ /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
+ /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
+ /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h \
+ /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+ /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+ /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
+ /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
+ /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
+ /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
+ /usr/include/eigen3/Eigen/src/Core/BandMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/CoreIterators.h \
+ /usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
+ /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h \
+ /usr/include/eigen3/Eigen/src/Core/Select.h \
+ /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
+ /usr/include/eigen3/Eigen/src/Core/Random.h \
+ /usr/include/eigen3/Eigen/src/Core/Replicate.h \
+ /usr/include/eigen3/Eigen/src/Core/Reverse.h \
+ /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
+ /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
+ /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
  /usr/include/boost/math/special_functions/next.hpp \
  /usr/include/boost/math/policies/error_handling.hpp \
  /usr/include/boost/math/tools/precision.hpp \
  /usr/include/boost/math/special_functions/trunc.hpp \
- /usr/include/CGAL/Bbox_3.h /usr/include/CGAL/representation_tags.h \
- /usr/include/CGAL/Kernel/global_functions.h \
- /usr/include/CGAL/Kernel/global_functions_2.h \
- /usr/include/CGAL/user_classes.h /usr/include/CGAL/Point_2.h \
- /usr/include/CGAL/Kernel/Return_base_tag.h \
- /usr/include/CGAL/Weighted_point_2.h /usr/include/CGAL/Vector_2.h \
- /usr/include/CGAL/Direction_2.h /usr/include/CGAL/Line_2.h \
- /usr/include/CGAL/Ray_2.h /usr/include/CGAL/Segment_2.h \
- /usr/include/CGAL/Triangle_2.h /usr/include/CGAL/Iso_rectangle_2.h \
- /usr/include/CGAL/Circle_2.h /usr/include/CGAL/Conic_2.h \
- /usr/include/CGAL/Kernel/Conic_misc.h \
+ /usr/local/include/CGAL/Bbox_3.h \
+ /usr/local/include/CGAL/representation_tags.h \
+ /usr/local/include/CGAL/Kernel/global_functions.h \
+ /usr/local/include/CGAL/Kernel/global_functions_2.h \
+ /usr/local/include/CGAL/user_classes.h /usr/local/include/CGAL/Point_2.h \
+ /usr/local/include/CGAL/Kernel/Return_base_tag.h \
+ /usr/local/include/CGAL/Weighted_point_2.h \
+ /usr/local/include/CGAL/Vector_2.h /usr/local/include/CGAL/Direction_2.h \
+ /usr/local/include/CGAL/Line_2.h /usr/local/include/CGAL/Ray_2.h \
+ /usr/local/include/CGAL/Segment_2.h /usr/local/include/CGAL/Triangle_2.h \
+ /usr/local/include/CGAL/Iso_rectangle_2.h \
+ /usr/local/include/CGAL/Circle_2.h /usr/local/include/CGAL/Conic_2.h \
+ /usr/local/include/CGAL/Kernel/Conic_misc.h \
  /usr/include/boost/math/special_functions/cbrt.hpp \
  /usr/include/boost/math/tools/rational.hpp \
  /usr/include/boost/math/tools/detail/polynomial_horner3_20.hpp \
  /usr/include/boost/math/tools/detail/rational_horner1_20.hpp \
  /usr/include/boost/mpl/divides.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/divides.hpp \
- /usr/include/CGAL/Aff_transformation_2.h /usr/include/CGAL/Point_3.h \
- /usr/include/CGAL/Weighted_point_3.h /usr/include/CGAL/Plane_3.h \
- /usr/include/CGAL/Vector_3.h /usr/include/CGAL/Direction_3.h \
- /usr/include/CGAL/Line_3.h /usr/include/CGAL/Ray_3.h \
- /usr/include/CGAL/Segment_3.h /usr/include/CGAL/Triangle_3.h \
- /usr/include/CGAL/Tetrahedron_3.h /usr/include/CGAL/Iso_cuboid_3.h \
- /usr/include/CGAL/Sphere_3.h /usr/include/CGAL/Circle_3.h \
- /usr/include/CGAL/Aff_transformation_3.h \
- /usr/include/CGAL/Kernel/global_functions_internal_2.h \
- /usr/include/CGAL/Kernel/global_functions_3.h \
- /usr/include/CGAL/Kernel/global_functions_internal_3.h \
- /usr/include/CGAL/Kernel/hash_functions.h \
+ /usr/local/include/CGAL/Aff_transformation_2.h \
+ /usr/local/include/CGAL/Point_3.h \
+ /usr/local/include/CGAL/Weighted_point_3.h \
+ /usr/local/include/CGAL/Plane_3.h /usr/local/include/CGAL/Vector_3.h \
+ /usr/local/include/CGAL/Direction_3.h /usr/local/include/CGAL/Line_3.h \
+ /usr/local/include/CGAL/Ray_3.h /usr/local/include/CGAL/Segment_3.h \
+ /usr/local/include/CGAL/Triangle_3.h \
+ /usr/local/include/CGAL/Tetrahedron_3.h \
+ /usr/local/include/CGAL/Iso_cuboid_3.h \
+ /usr/local/include/CGAL/Sphere_3.h /usr/local/include/CGAL/Circle_3.h \
+ /usr/local/include/CGAL/Aff_transformation_3.h \
+ /usr/local/include/CGAL/Kernel/global_functions_internal_2.h \
+ /usr/local/include/CGAL/Kernel/global_functions_3.h \
+ /usr/local/include/CGAL/Kernel/global_functions_internal_3.h \
+ /usr/local/include/CGAL/Kernel/hash_functions.h \
  /usr/include/boost/functional/hash.hpp \
  /usr/include/boost/container_hash/hash.hpp \
  /usr/include/boost/container_hash/detail/hash_float.hpp \
@@ -1093,9 +1211,9 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/c++/9/list /usr/include/c++/9/bits/stl_list.h \
  /usr/include/c++/9/bits/list.tcc /usr/include/c++/9/set \
  /usr/include/c++/9/bits/stl_set.h /usr/include/c++/9/bits/stl_multiset.h \
- /usr/include/c++/9/bitset /usr/include/CGAL/Cartesian/Point_2.h \
- /usr/include/CGAL/Cartesian/Weighted_point_2.h \
- /usr/include/CGAL/Handle_for.h /usr/include/CGAL/memory.h \
+ /usr/include/c++/9/bitset /usr/local/include/CGAL/Cartesian/Point_2.h \
+ /usr/local/include/CGAL/Cartesian/Weighted_point_2.h \
+ /usr/local/include/CGAL/Handle_for.h /usr/local/include/CGAL/memory.h \
  /usr/include/boost/tuple/tuple.hpp /usr/include/boost/ref.hpp \
  /usr/include/boost/core/ref.hpp \
  /usr/include/boost/tuple/detail/tuple_basic.hpp \
@@ -1103,10 +1221,12 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/type_traits/add_cv.hpp \
  /usr/include/boost/type_traits/remove_volatile.hpp \
  /usr/include/boost/utility/swap.hpp \
- /usr/include/CGAL/Cartesian/Vector_2.h /usr/include/CGAL/constant.h \
- /usr/include/CGAL/Cartesian/Direction_2.h \
- /usr/include/CGAL/Cartesian/Line_2.h \
- /usr/include/CGAL/predicates/kernel_ftC2.h /usr/include/CGAL/algorithm.h \
+ /usr/local/include/CGAL/Cartesian/Vector_2.h \
+ /usr/local/include/CGAL/constant.h \
+ /usr/local/include/CGAL/Cartesian/Direction_2.h \
+ /usr/local/include/CGAL/Cartesian/Line_2.h \
+ /usr/local/include/CGAL/predicates/kernel_ftC2.h \
+ /usr/local/include/CGAL/algorithm.h \
  /usr/include/boost/random/random_number_generator.hpp \
  /usr/include/boost/random/uniform_int_distribution.hpp \
  /usr/include/boost/random/detail/config.hpp \
@@ -1178,257 +1298,375 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/random/uniform_on_sphere.hpp \
  /usr/include/boost/random/uniform_smallint.hpp \
  /usr/include/boost/random/weibull_distribution.hpp \
- /usr/include/CGAL/predicates/sign_of_determinant.h \
- /usr/include/CGAL/determinant.h \
- /usr/include/CGAL/constructions/kernel_ftC2.h \
- /usr/include/CGAL/Cartesian/Ray_2.h \
- /usr/include/CGAL/Cartesian/Segment_2.h \
- /usr/include/CGAL/Cartesian/predicates_on_points_2.h \
- /usr/include/CGAL/Cartesian/Triangle_2.h \
- /usr/include/CGAL/Cartesian/Circle_2.h \
- /usr/include/CGAL/Cartesian/Iso_rectangle_2.h \
- /usr/include/CGAL/Cartesian/Aff_transformation_2.h \
- /usr/include/CGAL/Handle_for_virtual.h \
- /usr/include/CGAL/Cartesian/Aff_transformation_rep_2.h \
- /usr/include/CGAL/Cartesian/Translation_rep_2.h \
- /usr/include/CGAL/Cartesian/Rotation_rep_2.h \
- /usr/include/CGAL/rational_rotation.h \
- /usr/include/CGAL/Cartesian/Scaling_rep_2.h \
- /usr/include/CGAL/Cartesian/Reflection_rep_2.h \
- /usr/include/CGAL/Cartesian/Data_accessor_2.h \
- /usr/include/CGAL/Cartesian/ConicCPA2.h \
- /usr/include/CGAL/Cartesian/predicates_on_directions_2.h \
- /usr/include/CGAL/Cartesian/basic_constructions_2.h \
- /usr/include/CGAL/Cartesian/point_constructions_2.h \
- /usr/include/CGAL/Cartesian/line_constructions_2.h \
- /usr/include/CGAL/Cartesian/ft_constructions_2.h \
- /usr/include/CGAL/Cartesian/Point_3.h \
- /usr/include/CGAL/Cartesian/Weighted_point_3.h \
- /usr/include/CGAL/Cartesian/Vector_3.h \
- /usr/include/CGAL/Cartesian/Direction_3.h \
- /usr/include/CGAL/predicates/kernel_ftC3.h \
- /usr/include/CGAL/constructions/kernel_ftC3.h \
- /usr/include/CGAL/Cartesian/Line_3.h \
- /usr/include/CGAL/Cartesian/Plane_3.h \
- /usr/include/CGAL/Cartesian/solve_3.h /usr/include/CGAL/Kernel/solve.h \
- /usr/include/CGAL/Cartesian/plane_constructions_3.h \
- /usr/include/CGAL/Cartesian/Ray_3.h \
- /usr/include/CGAL/Cartesian/Segment_3.h \
- /usr/include/CGAL/Cartesian/Triangle_3.h \
- /usr/include/CGAL/Cartesian/Tetrahedron_3.h \
- /usr/include/CGAL/Cartesian/Iso_cuboid_3.h \
- /usr/include/CGAL/Cartesian/predicates_on_points_3.h \
- /usr/include/CGAL/Cartesian/Sphere_3.h \
- /usr/include/CGAL/Cartesian/Circle_3.h \
- /usr/include/CGAL/Cartesian/Aff_transformation_3.h \
- /usr/include/CGAL/Cartesian/Aff_transformation_rep_3.h \
- /usr/include/CGAL/Cartesian/Translation_rep_3.h \
- /usr/include/CGAL/Cartesian/Scaling_rep_3.h \
- /usr/include/CGAL/Cartesian/predicates_on_planes_3.h \
- /usr/include/CGAL/Cartesian/basic_constructions_3.h \
- /usr/include/CGAL/Cartesian/point_constructions_3.h \
- /usr/include/CGAL/Cartesian/ft_constructions_3.h \
- /usr/include/CGAL/Cartesian/function_objects.h \
- /usr/include/CGAL/Kernel/function_objects.h \
- /usr/include/CGAL/squared_distance_2.h \
- /usr/include/CGAL/squared_distance_2_1.h /usr/include/CGAL/wmult.h \
- /usr/include/CGAL/Kernel/Wutils.h \
- /usr/include/CGAL/squared_distance_utils.h \
- /usr/include/CGAL/squared_distance_2_2.h \
- /usr/include/CGAL/squared_distance_3.h \
- /usr/include/CGAL/squared_distance_3_0.h \
- /usr/include/CGAL/squared_distance_3_1.h \
- /usr/include/CGAL/squared_distance_3_2.h \
- /usr/include/CGAL/intersection_2.h \
- /usr/include/CGAL/Intersections_2/Bbox_2_Circle_2.h \
- /usr/include/CGAL/Intersections_2/Circle_2_Iso_rectangle_2.h \
- /usr/include/CGAL/Intersection_traits_2.h \
- /usr/include/CGAL/Intersection_traits.h \
- /usr/include/CGAL/Intersections_2/Bbox_2_Line_2.h \
- /usr/include/CGAL/Intersections_2/Iso_rectangle_2_Line_2.h \
- /usr/include/CGAL/Intersections_2/Bbox_2_Point_2.h \
- /usr/include/CGAL/Intersections_2/Iso_rectangle_2_Point_2.h \
- /usr/include/CGAL/Intersections_2/Bbox_2_Ray_2.h \
- /usr/include/CGAL/Intersections_2/Iso_rectangle_2_Ray_2.h \
- /usr/include/CGAL/Intersections_2/Circle_2_Circle_2.h \
- /usr/include/CGAL/Intersections_2/Circle_2_Line_2.h \
- /usr/include/CGAL/Intersections_2/Circle_2_Point_2.h \
- /usr/include/CGAL/Intersections_2/Iso_rectangle_2_Iso_rectangle_2.h \
- /usr/include/CGAL/Intersections_2/Iso_rectangle_2_Segment_2.h \
- /usr/include/CGAL/Intersections_2/Iso_rectangle_2_Triangle_2.h \
- /usr/include/CGAL/Intersections_2/Segment_2_Segment_2.h \
- /usr/include/CGAL/predicates_on_points_2.h \
- /usr/include/CGAL/Intersections_2/Line_2_Line_2.h \
- /usr/include/CGAL/Intersections_2/Line_2_Point_2.h \
- /usr/include/CGAL/Intersections_2/Line_2_Ray_2.h \
- /usr/include/CGAL/Intersections_2/Line_2_Segment_2.h \
- /usr/include/CGAL/Intersections_2/Line_2_Triangle_2.h \
- /usr/include/CGAL/Intersections_2/internal/Straight_2.h \
- /usr/include/CGAL/Intersections_2/Point_2_Point_2.h \
- /usr/include/CGAL/Intersections_2/Point_2_Ray_2.h \
- /usr/include/CGAL/Intersections_2/Point_2_Segment_2.h \
- /usr/include/CGAL/Intersections_2/Point_2_Triangle_2.h \
- /usr/include/CGAL/Intersections_2/Ray_2_Ray_2.h \
- /usr/include/CGAL/Intersections_2/Ray_2_Segment_2.h \
- /usr/include/CGAL/Intersections_2/Ray_2_Triangle_2.h \
- /usr/include/CGAL/Intersections_2/Segment_2_Triangle_2.h \
- /usr/include/CGAL/Intersections_2/Triangle_2_Triangle_2.h \
- /usr/include/CGAL/Intersections_2/internal/Triangle_2_Triangle_2_do_intersect_impl.h \
- /usr/include/CGAL/Intersections_2/internal/Triangle_2_Triangle_2_intersection_impl.h \
- /usr/include/CGAL/intersection_3.h \
- /usr/include/CGAL/Intersections_3/Bbox_3_Bbox_3.h \
- /usr/include/CGAL/Intersections_3/Bbox_3_Iso_cuboid_3.h \
- /usr/include/CGAL/Intersections_3/internal/Bbox_3_Iso_cuboid_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Bbox_3_Line_3.h \
- /usr/include/CGAL/Intersections_3/internal/intersection_3_1_impl.h \
- /usr/include/CGAL/Intersection_traits_3.h \
- /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Iso_cuboid_3.h \
- /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Line_3.h \
- /usr/include/CGAL/Intersections_3/internal/bbox_intersection_3.h \
- /usr/include/CGAL/Intersections_3/internal/Bbox_3_Line_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Bbox_3_Plane_3.h \
- /usr/include/CGAL/Intersections_3/internal/Bbox_3_Plane_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Bbox_3_Point_3.h \
- /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Point_3.h \
- /usr/include/CGAL/Intersections_3/Bbox_3_Ray_3.h \
- /usr/include/CGAL/Intersections_3/internal/Bbox_3_Ray_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/internal/Bbox_3_Segment_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Bbox_3_Segment_3.h \
- /usr/include/CGAL/Intersections_3/Bbox_3_Sphere_3.h \
- /usr/include/CGAL/Intersections_3/internal/Bbox_3_Sphere_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Bbox_3_Tetrahedron_3.h \
- /usr/include/CGAL/Intersections_3/internal/Tetrahedron_3_Bounded_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Triangle_3_Triangle_3.h \
- /usr/include/CGAL/Intersections_3/internal/Triangle_3_Triangle_3_intersection.h \
- /usr/include/CGAL/Intersections_3/Line_3_Triangle_3.h \
- /usr/include/CGAL/Intersections_3/internal/Triangle_3_Line_3_intersection.h \
- /usr/include/CGAL/Intersections_3/Line_3_Plane_3.h \
- /usr/include/CGAL/Intersections_3/internal/Triangle_3_Line_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/internal/Triangle_3_Triangle_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Segment_3_Triangle_3.h \
- /usr/include/CGAL/Intersections_3/internal/Triangle_3_Segment_3_intersection.h \
- /usr/include/CGAL/intersections.h \
- /usr/include/CGAL/Intersections_3/internal/Triangle_3_Segment_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Triangle_3.h \
- /usr/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Triangle_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/internal/Bbox_3_Triangle_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Triangle_3_intersection.h \
- /usr/include/CGAL/Intersections_3/Sphere_3_Triangle_3.h \
- /usr/include/CGAL/Intersections_3/internal/Triangle_3_Sphere_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Bbox_3_Triangle_3.h \
- /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Plane_3.h \
- /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Ray_3.h \
- /usr/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Ray_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Segment_3.h \
- /usr/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Segment_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Sphere_3.h \
- /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Tetrahedron_3.h \
- /usr/include/CGAL/Intersections_3/Line_3_Line_3.h \
- /usr/include/CGAL/Intersections_3/Line_3_Point_3.h \
- /usr/include/CGAL/Intersections_3/Line_3_Ray_3.h \
- /usr/include/CGAL/Intersections_3/Line_3_Segment_3.h \
- /usr/include/CGAL/Intersections_3/Line_3_Sphere_3.h \
- /usr/include/CGAL/Intersections_3/Line_3_Tetrahedron_3.h \
- /usr/include/CGAL/Intersections_3/internal/Tetrahedron_3_Unbounded_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Ray_3_Triangle_3.h \
- /usr/include/CGAL/Intersections_3/internal/Triangle_3_Ray_3_intersection.h \
- /usr/include/CGAL/Intersections_3/internal/Triangle_3_Ray_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Plane_3_Triangle_3.h \
- /usr/include/CGAL/Intersections_3/internal/Triangle_3_Plane_3_do_intersect.h \
- /usr/include/CGAL/Intersections_3/Plane_3_Plane_3.h \
- /usr/include/CGAL/Intersections_3/Plane_3_Point_3.h \
- /usr/include/CGAL/Intersections_3/Plane_3_Ray_3.h \
- /usr/include/CGAL/Intersections_3/Plane_3_Segment_3.h \
- /usr/include/CGAL/Intersections_3/Plane_3_Sphere_3.h \
- /usr/include/CGAL/Intersections_3/Plane_3_Tetrahedron_3.h \
- /usr/include/CGAL/Intersections_3/Point_3_Point_3.h \
- /usr/include/CGAL/Intersections_3/Point_3_Ray_3.h \
- /usr/include/CGAL/Intersections_3/Point_3_Segment_3.h \
- /usr/include/CGAL/Intersections_3/Point_3_Sphere_3.h \
- /usr/include/CGAL/Intersections_3/Point_3_Tetrahedron_3.h \
- /usr/include/CGAL/Intersections_3/Point_3_Triangle_3.h \
- /usr/include/CGAL/Intersections_3/Ray_3_Ray_3.h \
- /usr/include/CGAL/Intersections_3/Ray_3_Segment_3.h \
- /usr/include/CGAL/Intersections_3/Ray_3_Sphere_3.h \
- /usr/include/CGAL/Intersections_3/Ray_3_Tetrahedron_3.h \
- /usr/include/CGAL/Intersections_3/Segment_3_Segment_3.h \
- /usr/include/CGAL/Intersections_3/Segment_3_Sphere_3.h \
- /usr/include/CGAL/Intersections_3/Segment_3_Tetrahedron_3.h \
- /usr/include/CGAL/Intersections_3/Sphere_3_Sphere_3.h \
- /usr/include/CGAL/Intersections_3/Sphere_3_Tetrahedron_3.h \
- /usr/include/CGAL/Intersections_3/Tetrahedron_3_Tetrahedron_3.h \
- /usr/include/CGAL/Intersections_3/Tetrahedron_3_Triangle_3.h \
- /usr/include/CGAL/Kernel/Type_equality_wrapper.h \
- /usr/include/CGAL/Kernel/interface_macros.h \
- /usr/include/CGAL/Filtered_kernel.h \
- /usr/include/CGAL/Filtered_kernel_fwd.h \
- /usr/include/CGAL/Filtered_predicate.h \
- /usr/include/CGAL/Cartesian_converter.h \
- /usr/include/CGAL/Cartesian_converter_fwd.h \
- /usr/include/CGAL/NT_converter.h /usr/include/CGAL/Enum_converter.h \
- /usr/include/CGAL/Kernel/Type_mapper.h /usr/include/boost/mpl/remove.hpp \
- /usr/include/CGAL/Exact_kernel_selector.h \
- /usr/include/CGAL/Simple_homogeneous.h \
- /usr/include/CGAL/Homogeneous/Homogeneous_base.h \
- /usr/include/CGAL/Homogeneous/Aff_transformationH2.h \
- /usr/include/CGAL/Homogeneous/DirectionH2.h \
- /usr/include/CGAL/Homogeneous/predicates_on_directionsH2.h \
- /usr/include/CGAL/Homogeneous/PointH2.h \
- /usr/include/CGAL/Homogeneous/VectorH2.h \
- /usr/include/CGAL/Kernel_d/Cartesian_const_iterator_d.h \
- /usr/include/CGAL/Quotient.h \
- /usr/include/CGAL/Homogeneous/predicates_on_pointsH2.h \
- /usr/include/CGAL/Homogeneous/Iso_rectangleH2.h \
- /usr/include/CGAL/Homogeneous/LineH2.h \
- /usr/include/CGAL/Homogeneous/Weighted_point_2.h \
- /usr/include/CGAL/Homogeneous/Data_accessorH2.h \
- /usr/include/CGAL/Homogeneous/ConicHPA2.h \
- /usr/include/CGAL/Homogeneous/Aff_transformationH3.h \
- /usr/include/CGAL/Homogeneous/DirectionH3.h \
- /usr/include/CGAL/Homogeneous/Iso_cuboidH3.h \
- /usr/include/CGAL/Homogeneous/PlaneH3.h \
- /usr/include/CGAL/Homogeneous/PointH3.h \
- /usr/include/CGAL/Homogeneous/Weighted_point_3.h \
- /usr/include/CGAL/Homogeneous/RayH3.h \
- /usr/include/CGAL/Homogeneous/SphereH3.h \
- /usr/include/CGAL/Homogeneous/predicates_on_pointsH3.h \
- /usr/include/CGAL/Homogeneous/VectorH3.h \
- /usr/include/CGAL/Homogeneous/basic_constructionsH2.h \
- /usr/include/CGAL/Homogeneous/distance_predicatesH2.h \
- /usr/include/CGAL/Homogeneous/basic_constructionsH3.h \
- /usr/include/CGAL/Homogeneous/distance_predicatesH3.h \
- /usr/include/CGAL/Homogeneous/function_objects.h \
- /usr/include/CGAL/internal/Exact_type_selector.h \
- /usr/include/CGAL/MP_Float.h /usr/include/CGAL/Sqrt_extension.h \
- /usr/include/CGAL/Sqrt_extension/Sqrt_extension_type.h \
- /usr/include/CGAL/Interval_arithmetic.h \
- /usr/include/CGAL/Sqrt_extension_fwd.h \
- /usr/include/CGAL/Sqrt_extension/Algebraic_structure_traits.h \
- /usr/include/CGAL/Sqrt_extension/Real_embeddable_traits.h \
- /usr/include/CGAL/Sqrt_extension/Fraction_traits.h \
- /usr/include/CGAL/Sqrt_extension/Coercion_traits.h \
- /usr/include/CGAL/Sqrt_extension/Modular_traits.h \
- /usr/include/CGAL/Residue.h \
- /usr/include/CGAL/Sqrt_extension/Scalar_factor_traits.h \
- /usr/include/CGAL/Sqrt_extension/Algebraic_extension_traits.h \
- /usr/include/CGAL/Sqrt_extension/Chinese_remainder_traits.h \
- /usr/include/CGAL/Chinese_remainder_traits.h \
- /usr/include/CGAL/extended_euclidean_algorithm.h \
- /usr/include/CGAL/Sqrt_extension/io.h \
- /usr/include/CGAL/Sqrt_extension/Get_arithmetic_kernel.h \
- /usr/include/CGAL/Get_arithmetic_kernel.h \
- /usr/include/CGAL/Sqrt_extension/convert_to_bfi.h \
- /usr/include/CGAL/convert_to_bfi.h /usr/include/CGAL/Cache.h \
- /usr/include/CGAL/function_objects.h \
- /usr/include/CGAL/Sqrt_extension/Wang_traits.h \
- /usr/include/CGAL/Sqrt_extension/Eigen_NumTraits.h \
- /usr/include/CGAL/MP_Float_impl.h \
- /usr/include/CGAL/MP_Float_arithmetic_kernel.h \
- /usr/include/CGAL/Arithmetic_kernel/Arithmetic_kernel_base.h \
- /usr/include/CGAL/Lazy_exact_nt.h /usr/include/CGAL/Handle.h \
- /usr/include/CGAL/Lazy.h /usr/include/CGAL/min_max_n.h \
- /usr/include/CGAL/Default.h /usr/include/CGAL/is_iterator.h \
- /usr/include/CGAL/transforming_iterator.h /usr/include/CGAL/boost_mp.h \
+ /usr/local/include/CGAL/predicates/sign_of_determinant.h \
+ /usr/local/include/CGAL/determinant.h \
+ /usr/local/include/CGAL/constructions/kernel_ftC2.h \
+ /usr/local/include/CGAL/Cartesian/Ray_2.h \
+ /usr/local/include/CGAL/Cartesian/Segment_2.h \
+ /usr/local/include/CGAL/Cartesian/predicates_on_points_2.h \
+ /usr/local/include/CGAL/Cartesian/Triangle_2.h \
+ /usr/local/include/CGAL/Cartesian/Circle_2.h \
+ /usr/local/include/CGAL/Cartesian/Iso_rectangle_2.h \
+ /usr/local/include/CGAL/Cartesian/Aff_transformation_2.h \
+ /usr/local/include/CGAL/Handle_for_virtual.h \
+ /usr/local/include/CGAL/Cartesian/Aff_transformation_rep_2.h \
+ /usr/local/include/CGAL/Cartesian/Translation_rep_2.h \
+ /usr/local/include/CGAL/Cartesian/Rotation_rep_2.h \
+ /usr/local/include/CGAL/rational_rotation.h \
+ /usr/local/include/CGAL/Cartesian/Scaling_rep_2.h \
+ /usr/local/include/CGAL/Cartesian/Reflection_rep_2.h \
+ /usr/local/include/CGAL/Cartesian/Data_accessor_2.h \
+ /usr/local/include/CGAL/Cartesian/ConicCPA2.h \
+ /usr/local/include/CGAL/Cartesian/predicates_on_directions_2.h \
+ /usr/local/include/CGAL/Cartesian/basic_constructions_2.h \
+ /usr/local/include/CGAL/Cartesian/point_constructions_2.h \
+ /usr/local/include/CGAL/Cartesian/line_constructions_2.h \
+ /usr/local/include/CGAL/Cartesian/ft_constructions_2.h \
+ /usr/local/include/CGAL/Cartesian/Point_3.h \
+ /usr/local/include/CGAL/Cartesian/Weighted_point_3.h \
+ /usr/local/include/CGAL/Cartesian/Vector_3.h \
+ /usr/local/include/CGAL/Cartesian/Direction_3.h \
+ /usr/local/include/CGAL/predicates/kernel_ftC3.h \
+ /usr/local/include/CGAL/constructions/kernel_ftC3.h \
+ /usr/local/include/CGAL/Cartesian/Line_3.h \
+ /usr/local/include/CGAL/Cartesian/Plane_3.h \
+ /usr/local/include/CGAL/Cartesian/solve_3.h \
+ /usr/local/include/CGAL/Kernel/solve.h \
+ /usr/local/include/CGAL/Cartesian/plane_constructions_3.h \
+ /usr/local/include/CGAL/Cartesian/Ray_3.h \
+ /usr/local/include/CGAL/Cartesian/Segment_3.h \
+ /usr/local/include/CGAL/Cartesian/Triangle_3.h \
+ /usr/local/include/CGAL/Cartesian/Tetrahedron_3.h \
+ /usr/local/include/CGAL/Cartesian/Iso_cuboid_3.h \
+ /usr/local/include/CGAL/Cartesian/predicates_on_points_3.h \
+ /usr/local/include/CGAL/Cartesian/Sphere_3.h \
+ /usr/local/include/CGAL/Cartesian/Circle_3.h \
+ /usr/local/include/CGAL/Cartesian/Aff_transformation_3.h \
+ /usr/local/include/CGAL/Cartesian/Aff_transformation_rep_3.h \
+ /usr/local/include/CGAL/Cartesian/Translation_rep_3.h \
+ /usr/local/include/CGAL/Cartesian/Scaling_rep_3.h \
+ /usr/local/include/CGAL/Cartesian/predicates_on_planes_3.h \
+ /usr/local/include/CGAL/Cartesian/basic_constructions_3.h \
+ /usr/local/include/CGAL/Cartesian/point_constructions_3.h \
+ /usr/local/include/CGAL/Cartesian/ft_constructions_3.h \
+ /usr/local/include/CGAL/Cartesian/function_objects.h \
+ /usr/local/include/CGAL/Kernel/function_objects.h \
+ /usr/local/include/CGAL/squared_distance_2.h \
+ /usr/local/include/CGAL/Distance_2/Point_2_Point_2.h \
+ /usr/local/include/CGAL/Distance_2/Point_2_Segment_2.h \
+ /usr/local/include/CGAL/Distance_2/internal/squared_distance_utils_2.h \
+ /usr/local/include/CGAL/wmult.h /usr/local/include/CGAL/Kernel/Wutils.h \
+ /usr/local/include/CGAL/Distance_2/Point_2_Ray_2.h \
+ /usr/local/include/CGAL/Distance_2/Point_2_Line_2.h \
+ /usr/local/include/CGAL/Distance_2/Point_2_Triangle_2.h \
+ /usr/local/include/CGAL/Distance_2/Segment_2_Segment_2.h \
+ /usr/local/include/CGAL/Distance_2/Segment_2_Ray_2.h \
+ /usr/local/include/CGAL/Distance_2/Segment_2_Line_2.h \
+ /usr/local/include/CGAL/Distance_2/Segment_2_Triangle_2.h \
+ /usr/local/include/CGAL/Distance_2/Ray_2_Ray_2.h \
+ /usr/local/include/CGAL/Distance_2/Ray_2_Line_2.h \
+ /usr/local/include/CGAL/Distance_2/Ray_2_Triangle_2.h \
+ /usr/local/include/CGAL/Distance_2/Line_2_Line_2.h \
+ /usr/local/include/CGAL/Distance_2/Line_2_Triangle_2.h \
+ /usr/local/include/CGAL/Distance_2/Triangle_2_Triangle_2.h \
+ /usr/local/include/CGAL/squared_distance_3.h \
+ /usr/local/include/CGAL/Distance_3/Point_3_Point_3.h \
+ /usr/local/include/CGAL/Distance_3/Point_3_Weighted_point_3.h \
+ /usr/local/include/CGAL/Distance_3/Point_3_Segment_3.h \
+ /usr/local/include/CGAL/Distance_3/internal/squared_distance_utils_3.h \
+ /usr/local/include/CGAL/Distance_3/Point_3_Ray_3.h \
+ /usr/local/include/CGAL/Distance_3/Point_3_Line_3.h \
+ /usr/local/include/CGAL/Distance_3/Point_3_Triangle_3.h \
+ /usr/local/include/CGAL/Distance_3/Point_3_Plane_3.h \
+ /usr/local/include/CGAL/Distance_3/Point_3_Tetrahedron_3.h \
+ /usr/local/include/CGAL/Distance_3/Weighted_point_3_Weighted_point_3.h \
+ /usr/local/include/CGAL/Distance_3/Segment_3_Segment_3.h \
+ /usr/include/boost/algorithm/clamp.hpp \
+ /usr/local/include/CGAL/Distance_3/Segment_3_Ray_3.h \
+ /usr/local/include/CGAL/Distance_3/Segment_3_Line_3.h \
+ /usr/local/include/CGAL/Distance_3/Segment_3_Plane_3.h \
+ /usr/local/include/CGAL/Distance_3/Ray_3_Ray_3.h \
+ /usr/local/include/CGAL/Distance_3/Ray_3_Line_3.h \
+ /usr/local/include/CGAL/Distance_3/Ray_3_Plane_3.h \
+ /usr/local/include/CGAL/Distance_3/Line_3_Line_3.h \
+ /usr/local/include/CGAL/Distance_3/Line_3_Plane_3.h \
+ /usr/local/include/CGAL/Distance_3/Triangle_3_Triangle_3.h \
+ /usr/local/include/CGAL/Distance_3/Plane_3_Plane_3.h \
+ /usr/local/include/CGAL/intersection_2.h \
+ /usr/local/include/CGAL/Intersections_2/Bbox_2_Circle_2.h \
+ /usr/local/include/CGAL/Intersections_2/Circle_2_Iso_rectangle_2.h \
+ /usr/local/include/CGAL/Intersection_traits_2.h \
+ /usr/local/include/CGAL/Intersection_traits.h \
+ /usr/local/include/CGAL/Intersections_2/Bbox_2_Line_2.h \
+ /usr/local/include/CGAL/Intersections_2/Iso_rectangle_2_Line_2.h \
+ /usr/local/include/CGAL/Intersections_2/Bbox_2_Point_2.h \
+ /usr/local/include/CGAL/Intersections_2/Iso_rectangle_2_Point_2.h \
+ /usr/local/include/CGAL/Intersections_2/Bbox_2_Ray_2.h \
+ /usr/local/include/CGAL/Intersections_2/Iso_rectangle_2_Ray_2.h \
+ /usr/local/include/CGAL/Intersections_2/Circle_2_Circle_2.h \
+ /usr/local/include/CGAL/Intersections_2/Circle_2_Line_2.h \
+ /usr/local/include/CGAL/Intersections_2/Circle_2_Point_2.h \
+ /usr/local/include/CGAL/Intersections_2/Circle_2_Segment_2.h \
+ /usr/local/include/CGAL/Intersections_2/Circle_2_Ray_2.h \
+ /usr/local/include/CGAL/Intersections_2/Circle_2_Triangle_2.h \
+ /usr/local/include/CGAL/Intersections_2/Iso_rectangle_2_Iso_rectangle_2.h \
+ /usr/local/include/CGAL/Intersections_2/Iso_rectangle_2_Segment_2.h \
+ /usr/local/include/CGAL/Intersections_2/Iso_rectangle_2_Triangle_2.h \
+ /usr/local/include/CGAL/Intersections_2/Segment_2_Segment_2.h \
+ /usr/local/include/CGAL/predicates_on_points_2.h \
+ /usr/local/include/CGAL/Intersections_2/Line_2_Line_2.h \
+ /usr/local/include/CGAL/Intersections_2/Line_2_Point_2.h \
+ /usr/local/include/CGAL/Intersections_2/Line_2_Ray_2.h \
+ /usr/local/include/CGAL/Intersections_2/Line_2_Segment_2.h \
+ /usr/local/include/CGAL/Intersections_2/Line_2_Triangle_2.h \
+ /usr/local/include/CGAL/Intersections_2/internal/Straight_2.h \
+ /usr/local/include/CGAL/Intersections_2/Point_2_Point_2.h \
+ /usr/local/include/CGAL/Intersections_2/Point_2_Ray_2.h \
+ /usr/local/include/CGAL/Intersections_2/Point_2_Segment_2.h \
+ /usr/local/include/CGAL/Intersections_2/Point_2_Triangle_2.h \
+ /usr/local/include/CGAL/Intersections_2/Ray_2_Ray_2.h \
+ /usr/local/include/CGAL/Intersections_2/Ray_2_Segment_2.h \
+ /usr/local/include/CGAL/Intersections_2/Ray_2_Triangle_2.h \
+ /usr/local/include/CGAL/Intersections_2/Segment_2_Triangle_2.h \
+ /usr/local/include/CGAL/Intersections_2/Triangle_2_Triangle_2.h \
+ /usr/local/include/CGAL/Intersections_2/internal/Triangle_2_Triangle_2_do_intersect_impl.h \
+ /usr/local/include/CGAL/Intersections_2/internal/Triangle_2_Triangle_2_intersection_impl.h \
+ /usr/local/include/CGAL/intersection_3.h \
+ /usr/local/include/CGAL/Intersections_3/Bbox_3_Bbox_3.h \
+ /usr/local/include/CGAL/Intersection_traits_3.h \
+ /usr/local/include/CGAL/Intersections_3/Bbox_3_Iso_cuboid_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Iso_cuboid_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Iso_cuboid_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Iso_cuboid_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Bbox_3_Line_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Line_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Line_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Segment_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Bbox_3_Plane_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Plane_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Plane_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Plane_3_intersection.h \
+ /usr/local/include/CGAL/intersections.h \
+ /usr/local/include/CGAL/utility.h \
+ /usr/local/include/CGAL/Intersections_3/Bbox_3_Point_3.h \
+ /usr/local/include/CGAL/Intersections_3/Iso_cuboid_3_Point_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Point_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Point_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Bbox_3_Ray_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Ray_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Segment_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Ray_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Bbox_3_Segment_3.h \
+ /usr/local/include/CGAL/Intersections_3/Bbox_3_Sphere_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Sphere_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Sphere_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/Bbox_3_Tetrahedron_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Tetrahedron_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Bbox_3_Triangle_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/Bbox_3_Triangle_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Triangle_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Iso_cuboid_3_Iso_cuboid_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Iso_cuboid_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/Iso_cuboid_3_Line_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Line_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Line_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Iso_cuboid_3_Plane_3.h \
+ /usr/local/include/CGAL/Intersections_3/Iso_cuboid_3_Ray_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Ray_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Ray_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Iso_cuboid_3_Segment_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Segment_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Segment_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Iso_cuboid_3_Sphere_3.h \
+ /usr/local/include/CGAL/Intersections_3/Iso_cuboid_3_Tetrahedron_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Tetrahedron_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Tetrahedron_3_Bounded_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Iso_cuboid_3_Triangle_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Triangle_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Ray_3_Triangle_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Segment_3_Triangle_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Sphere_3_Triangle_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Tetrahedron_3_Triangle_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Triangle_3_Triangle_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/Iso_cuboid_3_Triangle_3.h \
+ /usr/local/include/CGAL/Intersections_3/Line_3_Line_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Line_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Line_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Line_3_Plane_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Plane_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Plane_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Line_3_Point_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Point_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Point_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Line_3_Ray_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Ray_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Ray_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Ray_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Line_3_Segment_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Segment_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Segment_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Line_3_Sphere_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Sphere_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/Line_3_Tetrahedron_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Tetrahedron_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Tetrahedron_3_Unbounded_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Triangle_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Tetrahedron_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/internal/tetrahedron_lines_intersections_3.h \
+ /usr/local/include/CGAL/Intersections_3/Line_3_Triangle_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Line_3_Triangle_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Plane_3_Plane_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Plane_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Plane_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Plane_3_Plane_3_Plane_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Plane_3_Plane_3_do_intersect.h \
+ /usr/local/include/CGAL/rank.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Plane_3_Plane_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Plane_3_Point_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Point_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Point_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Plane_3_Ray_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Ray_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Ray_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Plane_3_Segment_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Segment_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Segment_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Plane_3_Sphere_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Sphere_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Sphere_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Plane_3_Tetrahedron_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Tetrahedron_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Tetrahedron_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Plane_3_Triangle_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Triangle_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Point_3_Point_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Point_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Point_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Point_3_Ray_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Ray_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Point_3_Segment_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Segment_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Segment_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Point_3_Sphere_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Sphere_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Sphere_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Point_3_Tetrahedron_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Tetrahedron_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Tetrahedron_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Point_3_Triangle_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Triangle_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Point_3_Triangle_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Ray_3_Ray_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Ray_3_Ray_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Ray_3_Ray_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Ray_3_Segment_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Ray_3_Segment_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Ray_3_Segment_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Ray_3_Sphere_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Ray_3_Sphere_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/Ray_3_Tetrahedron_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Ray_3_Tetrahedron_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Ray_3_Tetrahedron_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Ray_3_Triangle_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Ray_3_Triangle_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Segment_3_Segment_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Segment_3_Segment_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Segment_3_Segment_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Segment_3_Sphere_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Segment_3_Sphere_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/Segment_3_Tetrahedron_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Segment_3_Tetrahedron_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Segment_3_Tetrahedron_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Segment_3_Triangle_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Segment_3_Triangle_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Sphere_3_Sphere_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Sphere_3_Sphere_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Sphere_3_Sphere_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Sphere_3_Tetrahedron_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Sphere_3_Tetrahedron_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/Sphere_3_Triangle_3.h \
+ /usr/local/include/CGAL/Intersections_3/Tetrahedron_3_Tetrahedron_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Tetrahedron_3_Tetrahedron_3_do_intersect.h \
+ /usr/local/include/CGAL/Intersections_3/Tetrahedron_3_Triangle_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Tetrahedron_3_Triangle_3_intersection.h \
+ /usr/local/include/CGAL/Intersections_3/Triangle_3_Triangle_3.h \
+ /usr/local/include/CGAL/Intersections_3/internal/Triangle_3_Triangle_3_intersection.h \
+ /usr/local/include/CGAL/Kernel/Type_equality_wrapper.h \
+ /usr/local/include/CGAL/Kernel/interface_macros.h \
+ /usr/local/include/CGAL/Filtered_kernel.h \
+ /usr/local/include/CGAL/Filtered_kernel_fwd.h \
+ /usr/local/include/CGAL/Filtered_predicate.h \
+ /usr/local/include/CGAL/Cartesian_converter.h \
+ /usr/local/include/CGAL/Cartesian_converter_fwd.h \
+ /usr/local/include/CGAL/NT_converter.h \
+ /usr/local/include/CGAL/Enum_converter.h \
+ /usr/local/include/CGAL/Kernel/Type_mapper.h \
+ /usr/include/boost/mpl/remove.hpp \
+ /usr/local/include/CGAL/Exact_kernel_selector.h \
+ /usr/local/include/CGAL/Simple_homogeneous.h \
+ /usr/local/include/CGAL/Homogeneous/Homogeneous_base.h \
+ /usr/local/include/CGAL/Homogeneous/Aff_transformationH2.h \
+ /usr/local/include/CGAL/Homogeneous/DirectionH2.h \
+ /usr/local/include/CGAL/Homogeneous/predicates_on_directionsH2.h \
+ /usr/local/include/CGAL/Homogeneous/PointH2.h \
+ /usr/local/include/CGAL/Homogeneous/VectorH2.h \
+ /usr/local/include/CGAL/Kernel_d/Cartesian_const_iterator_d.h \
+ /usr/local/include/CGAL/Quotient.h \
+ /usr/local/include/CGAL/Homogeneous/predicates_on_pointsH2.h \
+ /usr/local/include/CGAL/Homogeneous/Iso_rectangleH2.h \
+ /usr/local/include/CGAL/Homogeneous/LineH2.h \
+ /usr/local/include/CGAL/Homogeneous/Weighted_point_2.h \
+ /usr/local/include/CGAL/Homogeneous/Data_accessorH2.h \
+ /usr/local/include/CGAL/Homogeneous/ConicHPA2.h \
+ /usr/local/include/CGAL/Homogeneous/Aff_transformationH3.h \
+ /usr/local/include/CGAL/Homogeneous/DirectionH3.h \
+ /usr/local/include/CGAL/Homogeneous/Iso_cuboidH3.h \
+ /usr/local/include/CGAL/Homogeneous/PlaneH3.h \
+ /usr/local/include/CGAL/Homogeneous/PointH3.h \
+ /usr/local/include/CGAL/Homogeneous/Weighted_point_3.h \
+ /usr/local/include/CGAL/Homogeneous/RayH3.h \
+ /usr/local/include/CGAL/Homogeneous/SphereH3.h \
+ /usr/local/include/CGAL/Homogeneous/predicates_on_pointsH3.h \
+ /usr/local/include/CGAL/Homogeneous/VectorH3.h \
+ /usr/local/include/CGAL/Homogeneous/basic_constructionsH2.h \
+ /usr/local/include/CGAL/Homogeneous/distance_predicatesH2.h \
+ /usr/local/include/CGAL/Homogeneous/basic_constructionsH3.h \
+ /usr/local/include/CGAL/Homogeneous/distance_predicatesH3.h \
+ /usr/local/include/CGAL/Homogeneous/function_objects.h \
+ /usr/local/include/CGAL/Number_types/internal/Exact_type_selector.h \
+ /usr/local/include/CGAL/MP_Float.h \
+ /usr/local/include/CGAL/Sqrt_extension.h \
+ /usr/local/include/CGAL/Sqrt_extension/Sqrt_extension_type.h \
+ /usr/local/include/CGAL/Interval_arithmetic.h \
+ /usr/local/include/CGAL/Sqrt_extension_fwd.h \
+ /usr/local/include/CGAL/Sqrt_extension/Algebraic_structure_traits.h \
+ /usr/local/include/CGAL/Sqrt_extension/Real_embeddable_traits.h \
+ /usr/local/include/CGAL/Sqrt_extension/Fraction_traits.h \
+ /usr/local/include/CGAL/Sqrt_extension/Coercion_traits.h \
+ /usr/local/include/CGAL/Sqrt_extension/Modular_traits.h \
+ /usr/local/include/CGAL/Residue.h \
+ /usr/local/include/CGAL/Sqrt_extension/Scalar_factor_traits.h \
+ /usr/local/include/CGAL/Sqrt_extension/Algebraic_extension_traits.h \
+ /usr/local/include/CGAL/Sqrt_extension/Chinese_remainder_traits.h \
+ /usr/local/include/CGAL/Chinese_remainder_traits.h \
+ /usr/local/include/CGAL/extended_euclidean_algorithm.h \
+ /usr/local/include/CGAL/Sqrt_extension/io.h \
+ /usr/local/include/CGAL/Sqrt_extension/Get_arithmetic_kernel.h \
+ /usr/local/include/CGAL/Get_arithmetic_kernel.h \
+ /usr/local/include/CGAL/Sqrt_extension/convert_to_bfi.h \
+ /usr/local/include/CGAL/convert_to_bfi.h /usr/local/include/CGAL/Cache.h \
+ /usr/local/include/CGAL/function_objects.h \
+ /usr/local/include/CGAL/Sqrt_extension/Wang_traits.h \
+ /usr/local/include/CGAL/Sqrt_extension/Eigen_NumTraits.h \
+ /usr/local/include/CGAL/MP_Float_impl.h \
+ /usr/local/include/CGAL/MP_Float_arithmetic_kernel.h \
+ /usr/local/include/CGAL/Arithmetic_kernel/Arithmetic_kernel_base.h \
+ /usr/local/include/CGAL/Lazy_exact_nt.h /usr/local/include/CGAL/Handle.h \
+ /usr/local/include/CGAL/Lazy.h /usr/local/include/CGAL/min_max_n.h \
+ /usr/local/include/CGAL/Default.h /usr/local/include/CGAL/is_iterator.h \
+ /usr/local/include/CGAL/transforming_iterator.h /usr/include/c++/9/mutex \
+ /usr/include/c++/9/bits/std_mutex.h \
+ /usr/include/c++/9/bits/unique_lock.h /usr/local/include/CGAL/boost_mp.h \
  /usr/include/boost/multiprecision/number.hpp \
  /usr/include/boost/mpl/max.hpp \
  /usr/include/boost/type_traits/is_complex.hpp \
@@ -1519,34 +1757,41 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/math/special_functions/erf.hpp \
  /usr/include/boost/math/special_functions/detail/erf_inv.hpp \
  /usr/include/x86_64-linux-gnu/gmp.h /usr/include/mpfr.h \
- /usr/include/CGAL/BOOST_MP_arithmetic_kernel.h /usr/include/CGAL/Gmpz.h \
- /usr/include/CGAL/Gmp_coercion_traits.h \
- /usr/include/CGAL/GMP/Gmpz_type.h /usr/include/CGAL/gmp.h \
- /usr/include/CGAL/GMP/Gmpzf_type.h /usr/include/CGAL/GMP/Gmpfr_type.h \
- /usr/include/CGAL/ipower.h /usr/include/CGAL/GMP/Gmpfr_type_static.h \
- /usr/include/CGAL/GMP/Gmpq_type.h /usr/include/CGAL/Gmpq.h \
- /usr/include/CGAL/Gmpzf.h /usr/include/CGAL/GMP_arithmetic_kernel.h \
- /usr/include/CGAL/Mpzf.h /usr/include/CGAL/Homogeneous_converter.h \
- /usr/include/CGAL/internal/Static_filters/Static_filters.h \
- /usr/include/CGAL/internal/Static_filters/tools.h \
- /usr/include/CGAL/internal/Static_filters/Orientation_2.h \
- /usr/include/CGAL/internal/Static_filters/Static_filter_error.h \
- /usr/include/CGAL/internal/Static_filters/Orientation_3.h \
- /usr/include/CGAL/internal/Static_filters/Collinear_3.h \
- /usr/include/CGAL/internal/Static_filters/Equal_3.h \
- /usr/include/CGAL/internal/Static_filters/Equal_2.h \
- /usr/include/CGAL/internal/Static_filters/Compare_x_2.h \
- /usr/include/CGAL/internal/Static_filters/Compare_y_2.h \
- /usr/include/CGAL/internal/Static_filters/Is_degenerate_3.h \
- /usr/include/CGAL/internal/Static_filters/Angle_3.h \
- /usr/include/CGAL/internal/Static_filters/Do_intersect_3.h \
- /usr/include/CGAL/internal/Static_filters/Do_intersect_2.h \
- /usr/include/CGAL/internal/Static_filters/Compare_y_at_x_2.h \
- /usr/include/CGAL/internal/Static_filters/Side_of_oriented_circle_2.h \
- /usr/include/CGAL/internal/Static_filters/Side_of_oriented_sphere_3.h \
- /usr/include/CGAL/internal/Static_filters/Compare_squared_radius_3.h \
- /usr/include/CGAL/internal/Static_filters/Compare_weighted_squared_radius_3.h \
- /usr/include/CGAL/internal/Static_filters/Power_side_of_oriented_power_sphere_3.h \
+ /usr/local/include/CGAL/BOOST_MP_arithmetic_kernel.h \
+ /usr/local/include/CGAL/Gmpz.h \
+ /usr/local/include/CGAL/Gmp_coercion_traits.h \
+ /usr/local/include/CGAL/GMP/Gmpz_type.h /usr/local/include/CGAL/gmp.h \
+ /usr/local/include/CGAL/GMP/Gmpzf_type.h \
+ /usr/local/include/CGAL/GMP/Gmpfr_type.h \
+ /usr/local/include/CGAL/ipower.h \
+ /usr/local/include/CGAL/GMP/Gmpfr_type_static.h \
+ /usr/local/include/CGAL/GMP/Gmpq_type.h /usr/local/include/CGAL/Gmpq.h \
+ /usr/local/include/CGAL/Gmpzf.h \
+ /usr/local/include/CGAL/GMP_arithmetic_kernel.h \
+ /usr/local/include/CGAL/Mpzf.h \
+ /usr/local/include/CGAL/Homogeneous_converter.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Static_filters.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/tools.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Orientation_2.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Static_filter_error.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Orientation_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Collinear_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Equal_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Equal_2.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Compare_x_2.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Compare_y_2.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Is_degenerate_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Angle_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Do_intersect_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Do_intersect_2.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Coplanar_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Compare_y_at_x_2.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Side_of_oriented_circle_2.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Side_of_oriented_sphere_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Compare_squared_radius_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Compare_weighted_squared_radius_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Power_side_of_oriented_power_sphere_3.h \
+ /usr/local/include/CGAL/Filtered_kernel/internal/Static_filters/Compare_distance_3.h \
  /usr/include/boost/type_traits.hpp \
  /usr/include/boost/type_traits/extent.hpp \
  /usr/include/boost/type_traits/floating_point_promotion.hpp \
@@ -1604,69 +1849,487 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/type_traits/remove_cv_ref.hpp \
  /usr/include/boost/type_traits/integral_promotion.hpp \
  /usr/include/boost/type_traits/promote.hpp \
- /usr/include/CGAL/Triangulation_structural_filtering_traits.h \
- /usr/include/CGAL/Polygon_2.h /usr/include/CGAL/circulator.h \
- /usr/include/CGAL/circulator_bases.h \
- /usr/include/CGAL/Polygon_2_algorithms.h \
- /usr/include/CGAL/Polygon_2/polygon_assertions.h \
- /usr/include/CGAL/Polygon_2/Polygon_2_algorithms_impl.h \
- /usr/include/CGAL/Polygon_2/Polygon_2_simplicity.h \
- /usr/include/CGAL/Polygon_2/Polygon_2_vertex_circulator.h \
- /usr/include/CGAL/Polygon_2/Polygon_2_edge_iterator.h \
- /usr/include/CGAL/Polygon_2/Polygon_2_edge_circulator.h \
- /usr/include/CGAL/Polygon_2/Polygon_2_impl.h \
- /usr/include/CGAL/Constrained_Delaunay_triangulation_2.h \
- /usr/include/CGAL/license/Triangulation_2.h \
- /usr/include/CGAL/triangulation_assertions.h \
- /usr/include/CGAL/Constrained_triangulation_2.h \
- /usr/include/CGAL/Triangulation_2.h /usr/include/CGAL/iterator.h \
- /usr/include/CGAL/Iterator_range.h /usr/include/CGAL/tuple.h \
+ /usr/local/include/CGAL/Triangulation_structural_filtering_traits.h \
+ /usr/local/include/CGAL/Polygon_2.h /usr/local/include/CGAL/circulator.h \
+ /usr/local/include/CGAL/circulator_bases.h \
+ /usr/local/include/CGAL/Iterator_range.h /usr/local/include/CGAL/tuple.h \
  /usr/include/boost/foreach.hpp /usr/include/boost/foreach_fwd.hpp \
- /usr/include/CGAL/Triangulation_utils_2.h \
- /usr/include/CGAL/license/TDS_2.h \
- /usr/include/CGAL/Triangulation_data_structure_2.h \
- /usr/include/c++/9/stack /usr/include/c++/9/bits/stl_stack.h \
- /usr/include/CGAL/Unique_hash_map.h \
- /usr/include/CGAL/Handle_hash_function.h \
- /usr/include/CGAL/Tools/chained_map.h \
- /usr/include/CGAL/Compact_container.h /usr/include/CGAL/CC_safe_handle.h \
- /usr/include/CGAL/Time_stamper.h /usr/include/CGAL/Has_timestamp.h \
- /usr/include/CGAL/atomic.h \
- /usr/include/CGAL/Triangulation_ds_face_base_2.h \
- /usr/include/CGAL/Dummy_tds_2.h \
- /usr/include/CGAL/Triangulation_ds_vertex_base_2.h \
- /usr/include/CGAL/Triangulation_ds_iterators_2.h \
- /usr/include/CGAL/Triangulation_ds_circulators_2.h \
- /usr/include/CGAL/IO/File_header_OFF.h \
- /usr/include/CGAL/IO/File_header_extended_OFF.h \
- /usr/include/CGAL/IO/File_header_extended_OFF_impl.h \
- /usr/include/CGAL/IO/File_header_OFF_impl.h \
- /usr/include/CGAL/IO/binary_file_io.h \
- /usr/include/CGAL/IO/File_scanner_OFF.h \
- /usr/include/CGAL/IO/File_scanner_OFF_impl.h \
- /usr/include/CGAL/Triangulation_vertex_base_2.h \
- /usr/include/CGAL/Triangulation_face_base_2.h \
- /usr/include/CGAL/Triangulation_2/internal/Triangulation_line_face_circulator_2.h \
- /usr/include/CGAL/spatial_sort.h /usr/include/CGAL/hilbert_sort.h \
- /usr/include/CGAL/Hilbert_policy_tags.h \
- /usr/include/CGAL/Hilbert_sort_2.h \
- /usr/include/CGAL/Hilbert_sort_median_2.h \
- /usr/include/CGAL/Hilbert_sort_base.h \
- /usr/include/CGAL/Hilbert_sort_middle_2.h \
- /usr/include/CGAL/Hilbert_sort_middle_base.h \
- /usr/include/CGAL/Hilbert_sort_3.h \
- /usr/include/CGAL/Hilbert_sort_median_3.h \
- /usr/include/CGAL/Hilbert_sort_middle_3.h \
- /usr/include/CGAL/Hilbert_sort_d.h \
- /usr/include/CGAL/Hilbert_sort_median_d.h \
- /usr/include/CGAL/Hilbert_sort_middle_d.h \
- /usr/include/CGAL/Multiscale_sort.h \
- /usr/include/CGAL/Spatial_sort_traits_adapter_2.h \
- /usr/include/CGAL/property_map.h /usr/include/CGAL/value_type_traits.h \
+ /usr/local/include/CGAL/Polygon_2_algorithms.h \
+ /usr/local/include/CGAL/Polygon_2/polygon_assertions.h \
+ /usr/local/include/CGAL/Polygon_2/Polygon_2_algorithms_impl.h \
+ /usr/local/include/CGAL/Polygon_2/Polygon_2_simplicity.h \
+ /usr/local/include/CGAL/Polygon_2/Polygon_2_vertex_circulator.h \
+ /usr/local/include/CGAL/Polygon_2/Polygon_2_edge_iterator.h \
+ /usr/local/include/CGAL/Polygon_2/Polygon_2_edge_circulator.h \
+ /usr/local/include/CGAL/Polygon_2/Polygon_2_impl.h \
+ /usr/local/include/CGAL/Surface_mesh.h \
+ /usr/local/include/CGAL/license/Surface_mesh.h \
+ /usr/local/include/CGAL/Surface_mesh/Surface_mesh_fwd.h \
+ /usr/local/include/CGAL/Surface_mesh/Surface_mesh.h \
+ /usr/local/include/CGAL/Surface_mesh/IO.h \
+ /usr/local/include/CGAL/Surface_mesh/IO/3MF.h \
+ /usr/local/include/CGAL/IO/3MF.h \
+ /usr/local/include/CGAL/IO/3MF/read_3mf.h \
+ /usr/local/include/CGAL/IO/3MF/write_3mf.h \
+ /usr/local/include/CGAL/IO/helpers.h \
+ /usr/local/include/CGAL/Container_helper.h \
+ /usr/local/include/CGAL/Has_member.h \
+ /usr/local/include/CGAL/boost/graph/iterator.h \
+ /usr/include/boost/graph/graph_traits.hpp \
+ /usr/include/boost/pending/property.hpp \
+ /usr/include/boost/pending/detail/property.hpp \
+ /usr/local/include/CGAL/boost/graph/internal/helpers.h \
+ /usr/local/include/CGAL/Surface_mesh/IO/OFF.h \
+ /usr/local/include/CGAL/boost/graph/IO/OFF.h \
+ /usr/local/include/CGAL/IO/OFF.h \
+ /usr/local/include/CGAL/IO/OFF/Scanner_OFF.h \
+ /usr/local/include/CGAL/IO/OFF/File_scanner_OFF.h \
+ /usr/local/include/CGAL/IO/binary_file_io.h \
+ /usr/local/include/CGAL/IO/OFF/File_header_OFF.h \
+ /usr/local/include/CGAL/IO/OFF/File_header_extended_OFF.h \
+ /usr/local/include/CGAL/IO/OFF/File_header_extended_OFF_impl.h \
+ /usr/local/include/CGAL/IO/OFF/File_header_OFF_impl.h \
+ /usr/local/include/CGAL/IO/OFF/File_writer_OFF.h \
+ /usr/local/include/CGAL/IO/OFF/generic_copy_OFF.h \
+ /usr/local/include/CGAL/IO/Generic_writer.h \
+ /usr/local/include/CGAL/Named_function_parameters.h \
+ /usr/local/include/CGAL/STL_Extension/internal/parameters_interface.h \
+ /usr/local/include/CGAL/boost/graph/named_params_helper.h \
+ /usr/local/include/CGAL/boost/graph/internal/initialized_index_maps_helpers.h \
+ /usr/local/include/CGAL/boost/graph/properties.h \
+ /usr/local/include/CGAL/property_map.h \
+ /usr/local/include/CGAL/value_type_traits.h \
  /usr/include/boost/property_map/property_map.hpp \
  /usr/include/boost/concept_archetype.hpp \
  /usr/include/boost/property_map/vector_property_map.hpp \
- /usr/include/CGAL/internal/boost/function_property_map.hpp \
+ /usr/include/boost/shared_ptr.hpp \
+ /usr/include/boost/smart_ptr/shared_ptr.hpp \
+ /usr/include/boost/config/no_tr1/memory.hpp \
+ /usr/include/boost/smart_ptr/detail/shared_count.hpp \
+ /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_counted_base.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_has_sync.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
+ /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp \
+ /usr/include/boost/smart_ptr/detail/spinlock.hpp \
+ /usr/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp \
+ /usr/include/boost/smart_ptr/detail/yield_k.hpp \
+ /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
+ /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
+ /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /usr/local/include/CGAL/boost/iterator/counting_iterator.hpp \
+ /usr/include/boost/iterator/counting_iterator.hpp \
+ /usr/include/boost/detail/numeric_traits.hpp \
+ /usr/local/include/CGAL/Dynamic_property_map.h \
+ /usr/include/boost/graph/properties.hpp \
+ /usr/include/boost/graph/property_maps/constant_property_map.hpp \
+ /usr/include/boost/graph/property_maps/null_property_map.hpp \
+ /usr/local/include/CGAL/iterator.h \
+ /usr/local/include/CGAL/boost/graph/IO/Generic_facegraph_builder.h \
+ /usr/local/include/CGAL/boost/graph/Euler_operations.h \
+ /usr/local/include/CGAL/boost/graph/helpers.h \
+ /usr/local/include/CGAL/boost/graph/internal/Has_member_clear.h \
+ /usr/local/include/CGAL/IO/Verbose_ostream.h \
+ /usr/local/include/CGAL/boost/graph/generators.h \
+ /usr/local/include/CGAL/Random.h /usr/local/include/CGAL/Random_impl.h \
+ /usr/include/boost/container/small_vector.hpp \
+ /usr/include/boost/container/detail/config_begin.hpp \
+ /usr/include/boost/container/detail/workaround.hpp \
+ /usr/include/boost/container/vector.hpp \
+ /usr/include/boost/container/allocator_traits.hpp \
+ /usr/include/boost/container/detail/mpl.hpp \
+ /usr/include/boost/intrusive/detail/mpl.hpp \
+ /usr/include/boost/intrusive/detail/config_begin.hpp \
+ /usr/include/boost/intrusive/detail/config_end.hpp \
+ /usr/include/boost/container/detail/config_end.hpp \
+ /usr/include/boost/container/detail/type_traits.hpp \
+ /usr/include/boost/container/detail/placement_new.hpp \
+ /usr/include/boost/intrusive/pointer_traits.hpp \
+ /usr/include/boost/intrusive/detail/workaround.hpp \
+ /usr/include/boost/intrusive/pointer_rebind.hpp \
+ /usr/include/boost/intrusive/detail/has_member_function_callable_with.hpp \
+ /usr/include/boost/move/detail/fwd_macros.hpp \
+ /usr/include/boost/container/new_allocator.hpp \
+ /usr/include/boost/container/throw_exception.hpp \
+ /usr/include/boost/container/options.hpp \
+ /usr/include/boost/intrusive/pack_options.hpp \
+ /usr/include/boost/container/detail/advanced_insert_int.hpp \
+ /usr/include/boost/container/detail/copy_move_algo.hpp \
+ /usr/include/boost/container/detail/iterator.hpp \
+ /usr/include/boost/intrusive/detail/iterator.hpp \
+ /usr/include/boost/intrusive/detail/std_fwd.hpp \
+ /usr/include/boost/container/detail/construct_in_place.hpp \
+ /usr/include/boost/container/detail/iterators.hpp \
+ /usr/include/boost/container/detail/value_init.hpp \
+ /usr/include/boost/intrusive/detail/reverse_iterator.hpp \
+ /usr/include/boost/container/detail/variadic_templates_tools.hpp \
+ /usr/include/boost/container/detail/destroyers.hpp \
+ /usr/include/boost/container/detail/version_type.hpp \
+ /usr/include/boost/container/detail/algorithm.hpp \
+ /usr/include/boost/intrusive/detail/algorithm.hpp \
+ /usr/include/boost/container/detail/alloc_helpers.hpp \
+ /usr/include/boost/container/detail/allocation_type.hpp \
+ /usr/include/boost/container/detail/next_capacity.hpp \
+ /usr/include/boost/container/detail/min_max.hpp \
+ /usr/include/boost/container/detail/value_functors.hpp \
+ /usr/include/boost/move/detail/move_helpers.hpp \
+ /usr/include/boost/move/algo/adaptive_merge.hpp \
+ /usr/include/boost/move/algo/detail/adaptive_sort_merge.hpp \
+ /usr/include/boost/move/detail/reverse_iterator.hpp \
+ /usr/include/boost/move/algo/detail/merge.hpp \
+ /usr/include/boost/move/algo/detail/basic_op.hpp \
+ /usr/include/boost/move/detail/destruct_n.hpp \
+ /usr/include/boost/move/algo/predicate.hpp \
+ /usr/include/boost/move/algo/detail/insertion_sort.hpp \
+ /usr/include/boost/move/detail/placement_new.hpp \
+ /usr/include/boost/move/algo/detail/merge_sort.hpp \
+ /usr/include/boost/move/algo/detail/heap_sort.hpp \
+ /usr/include/boost/move/algo/detail/is_sorted.hpp \
+ /usr/include/boost/move/algo/unique.hpp \
+ /usr/include/boost/move/algo/detail/set_difference.hpp \
+ /usr/local/include/CGAL/boost/graph/IO/Generic_facegraph_printer.h \
+ /usr/include/boost/container/flat_map.hpp \
+ /usr/include/boost/container/detail/flat_tree.hpp \
+ /usr/include/boost/container/detail/pair.hpp \
+ /usr/include/boost/intrusive/detail/minimal_pair_header.hpp \
+ /usr/include/boost/container/detail/is_sorted.hpp \
+ /usr/include/boost/container/detail/is_contiguous_container.hpp \
+ /usr/include/boost/container/detail/is_container.hpp \
+ /usr/include/boost/move/make_unique.hpp \
+ /usr/include/boost/move/unique_ptr.hpp \
+ /usr/include/boost/move/detail/unique_ptr_meta_utils.hpp \
+ /usr/include/boost/move/default_delete.hpp \
+ /usr/include/boost/move/algo/adaptive_sort.hpp \
+ /usr/include/boost/move/algo/detail/pdqsort.hpp \
+ /usr/include/boost/container/detail/container_or_allocator_rebind.hpp \
+ /usr/include/boost/container/detail/container_rebind.hpp \
+ /usr/include/boost/intrusive/detail/minimal_less_equal_header.hpp \
+ /usr/local/include/CGAL/Surface_mesh/IO/PLY.h \
+ /usr/local/include/CGAL/IO/PLY.h \
+ /usr/local/include/CGAL/IO/PLY/PLY_reader.h \
+ /usr/local/include/CGAL/IO/PLY/PLY_writer.h \
+ /usr/local/include/CGAL/boost/graph/io.h \
+ /usr/local/include/CGAL/boost/graph/IO/3MF.h \
+ /usr/local/include/CGAL/boost/graph/IO/GOCAD.h \
+ /usr/local/include/CGAL/IO/GOCAD.h \
+ /usr/local/include/CGAL/boost/graph/IO/INP.h \
+ /usr/local/include/CGAL/boost/graph/IO/OBJ.h \
+ /usr/local/include/CGAL/IO/OBJ.h \
+ /usr/local/include/CGAL/IO/OBJ/File_writer_wavefront.h \
+ /usr/local/include/CGAL/boost/graph/IO/PLY.h \
+ /usr/local/include/CGAL/boost/graph/IO/STL.h \
+ /usr/local/include/CGAL/IO/STL.h \
+ /usr/local/include/CGAL/IO/STL/STL_reader.h \
+ /usr/local/include/CGAL/boost/graph/IO/VTK.h \
+ /usr/local/include/CGAL/IO/VTK.h \
+ /usr/local/include/CGAL/IO/VTK/VTK_reader.h \
+ /usr/local/include/CGAL/IO/VTK/VTK_writer.h \
+ /usr/local/include/CGAL/boost/graph/IO/WRL.h \
+ /usr/local/include/CGAL/IO/VRML.h \
+ /usr/local/include/CGAL/IO/VRML/File_writer_VRML_2.h \
+ /usr/local/include/CGAL/IO/VRML/VRML_2_ostream.h \
+ /usr/local/include/CGAL/IO/VRML/VRML_1_ostream.h \
+ /usr/local/include/CGAL/IO/OI.h \
+ /usr/local/include/CGAL/IO/OI/File_writer_inventor.h \
+ /usr/local/include/CGAL/IO/OI/Inventor_ostream.h \
+ /usr/local/include/CGAL/boost/graph/IO/polygon_mesh_io.h \
+ /usr/local/include/CGAL/Surface_mesh/Properties.h \
+ /usr/local/include/CGAL/boost/graph/copy_face_graph.h \
+ /usr/include/boost/iterator/function_output_iterator.hpp \
+ /usr/local/include/CGAL/boost/graph/graph_traits_Surface_mesh.h \
+ /usr/local/include/CGAL/boost/graph/properties_Surface_mesh.h \
+ /usr/local/include/CGAL/boost/graph/properties_Surface_mesh_time_stamp.h \
+ /usr/local/include/CGAL/boost/graph/properties_Surface_mesh_features.h \
+ /usr/local/include/CGAL/Handle_hash_function.h \
+ /usr/local/include/CGAL/optimal_bounding_box.h \
+ /usr/local/include/CGAL/license/Optimal_bounding_box.h \
+ /usr/local/include/CGAL/Optimal_bounding_box/Oriented_bounding_box_traits_3.h \
+ /usr/local/include/CGAL/Eigen_matrix.h \
+ /usr/local/include/CGAL/Eigen_sparse_matrix.h \
+ /usr/include/eigen3/Eigen/Sparse /usr/include/eigen3/Eigen/SparseCore \
+ /usr/include/eigen3/Eigen/Core \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseUtil.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseMatrixBase.h \
+ /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseAssign.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/CompressedStorage.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/AmbiVector.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseCompressedBase.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseMatrix.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseMap.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/MappedSparseMatrix.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseVector.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseRef.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseCwiseUnaryOp.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseCwiseBinaryOp.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseTranspose.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseBlock.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseDot.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseRedux.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseView.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseDiagonalProduct.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseSparseProductWithPruning.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseProduct.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseDenseProduct.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseSelfAdjointView.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseTriangularView.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparsePermutation.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseFuzzy.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseSolverBase.h \
+ /usr/include/eigen3/Eigen/OrderingMethods \
+ /usr/include/eigen3/Eigen/src/OrderingMethods/Amd.h \
+ /usr/include/eigen3/Eigen/src/Core/util/NonMPL2.h \
+ /usr/include/eigen3/Eigen/src/OrderingMethods/Ordering.h \
+ /usr/include/eigen3/Eigen/src/OrderingMethods/Eigen_Colamd.h \
+ /usr/include/eigen3/Eigen/SparseCholesky \
+ /usr/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky.h \
+ /usr/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h \
+ /usr/include/eigen3/Eigen/src/Core/util/NonMPL2.h \
+ /usr/include/eigen3/Eigen/SparseLU \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_gemm_kernel.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Structs.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLUImpl.h \
+ /usr/include/eigen3/Eigen/src/SparseCore/SparseColEtree.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Memory.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_relax_snode.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_pivotL.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_dfs.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_bmod.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_column_dfs.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_column_bmod.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_pruneL.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Utils.h \
+ /usr/include/eigen3/Eigen/src/SparseLU/SparseLU.h \
+ /usr/include/eigen3/Eigen/SparseQR \
+ /usr/include/eigen3/Eigen/src/SparseQR/SparseQR.h \
+ /usr/include/eigen3/Eigen/IterativeLinearSolvers \
+ /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h \
+ /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h \
+ /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h \
+ /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h \
+ /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h \
+ /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h \
+ /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
+ /usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h \
+ /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/LU \
+ /usr/include/eigen3/Eigen/src/misc/Kernel.h \
+ /usr/include/eigen3/Eigen/src/misc/Image.h \
+ /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+ /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
+ /usr/include/eigen3/Eigen/src/LU/Determinant.h \
+ /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
+ /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h \
+ /usr/include/eigen3/Eigen/Cholesky /usr/include/eigen3/Eigen/Jacobi \
+ /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
+ /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
+ /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
+ /usr/include/eigen3/Eigen/QR /usr/include/eigen3/Eigen/Householder \
+ /usr/include/eigen3/Eigen/src/Householder/Householder.h \
+ /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+ /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
+ /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
+ /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
+ /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
+ /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+ /usr/include/eigen3/Eigen/SVD \
+ /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+ /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
+ /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
+ /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
+ /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+ /usr/include/eigen3/Eigen/Geometry \
+ /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
+ /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
+ /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
+ /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Scaling.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+ /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
+ /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
+ /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h \
+ /usr/include/eigen3/Eigen/Eigenvalues \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /usr/local/include/CGAL/Eigen_vector.h /usr/include/eigen3/Eigen/QR \
+ /usr/local/include/CGAL/Optimal_bounding_box/oriented_bounding_box.h \
+ /usr/local/include/CGAL/Optimal_bounding_box/internal/evolution.h \
+ /usr/local/include/CGAL/Optimal_bounding_box/internal/fitness_function.h \
+ /usr/local/include/CGAL/Optimal_bounding_box/internal/helper.h \
+ /usr/local/include/CGAL/Optimal_bounding_box/internal/nelder_mead_functions.h \
+ /usr/local/include/CGAL/Optimal_bounding_box/internal/optimize_2.h \
+ /usr/local/include/CGAL/ch_akl_toussaint.h \
+ /usr/local/include/CGAL/license/Convex_hull_2.h \
+ /usr/local/include/CGAL/Convex_hull_2/ch_akl_toussaint_impl.h \
+ /usr/local/include/CGAL/convexity_check_2.h \
+ /usr/local/include/CGAL/Convex_hull_2/convexity_check_2_impl.h \
+ /usr/local/include/CGAL/Convex_hull_2/ch_assertions.h \
+ /usr/local/include/CGAL/ch_selected_extreme_points_2.h \
+ /usr/local/include/CGAL/Convex_hull_2/ch_selected_extreme_points_2_impl.h \
+ /usr/local/include/CGAL/ch_graham_andrew.h \
+ /usr/local/include/CGAL/Convex_hull_2/ch_graham_andrew_impl.h \
+ /usr/local/include/CGAL/IO/Tee_for_output_iterator.h \
+ /usr/local/include/CGAL/min_quadrilateral_2.h \
+ /usr/local/include/CGAL/license/Bounding_volumes.h \
+ /usr/local/include/CGAL/Optimisation/assertions.h \
+ /usr/local/include/CGAL/Min_quadrilateral_traits_2.h \
+ /usr/local/include/CGAL/Optimal_bounding_box/internal/population.h \
+ /usr/local/include/CGAL/convex_hull_3.h \
+ /usr/local/include/CGAL/license/Convex_hull_3.h \
+ /usr/local/include/CGAL/convex_hull_2.h \
+ /usr/local/include/CGAL/convex_hull_traits_2.h \
+ /usr/local/include/CGAL/distance_predicates_2.h \
+ /usr/local/include/CGAL/ch_bykat.h \
+ /usr/local/include/CGAL/Convex_hull_2/ch_bykat_impl.h \
+ /usr/local/include/CGAL/Convex_hull_traits_3.h \
+ /usr/local/include/CGAL/Polyhedron_3_fwd.h \
+ /usr/local/include/CGAL/Projection_traits_xy_3.h \
+ /usr/local/include/CGAL/Kernel_23/internal/Projection_traits_3.h \
+ /usr/local/include/CGAL/Kernel_23/internal/Has_boolean_tags.h \
+ /usr/local/include/CGAL/Projection_traits_xz_3.h \
+ /usr/local/include/CGAL/Projection_traits_yz_3.h \
+ /usr/local/include/CGAL/Convex_hull_face_base_2.h \
+ /usr/local/include/CGAL/Triangulation_ds_face_base_2.h \
+ /usr/local/include/CGAL/license/TDS_2.h \
+ /usr/local/include/CGAL/triangulation_assertions.h \
+ /usr/local/include/CGAL/Triangulation_utils_2.h \
+ /usr/local/include/CGAL/Dummy_tds_2.h \
+ /usr/local/include/CGAL/Convex_hull_vertex_base_2.h \
+ /usr/local/include/CGAL/Triangulation_ds_vertex_base_2.h \
+ /usr/local/include/CGAL/Triangulation_data_structure_2.h \
+ /usr/include/c++/9/stack /usr/include/c++/9/bits/stl_stack.h \
+ /usr/local/include/CGAL/Unique_hash_map.h \
+ /usr/local/include/CGAL/Hash_map/internal/chained_map.h \
+ /usr/local/include/CGAL/Compact_container.h \
+ /usr/local/include/CGAL/CC_safe_handle.h \
+ /usr/local/include/CGAL/Time_stamper.h \
+ /usr/local/include/CGAL/Has_timestamp.h \
+ /usr/local/include/CGAL/Triangulation_ds_iterators_2.h \
+ /usr/local/include/CGAL/Triangulation_ds_circulators_2.h \
+ /usr/local/include/CGAL/Convex_hull_3/internal/Indexed_triangle_set.h \
+ /usr/local/include/CGAL/boost/graph/graph_traits_Triangulation_data_structure_2.h \
+ /usr/local/include/CGAL/boost/graph/internal/graph_traits_2D_TDS_helper.h \
+ /usr/include/boost/iterator_adaptors.hpp \
+ /usr/local/include/CGAL/boost/graph/properties_Triangulation_data_structure_2.h \
+ /usr/local/include/CGAL/boost/graph/internal/Has_member_id.h \
+ /usr/local/include/CGAL/convexity_check_3.h \
+ /usr/local/include/CGAL/boost/graph/property_maps.h \
+ /usr/local/include/CGAL/Polygon_mesh_processing/IO/polygon_mesh_io.h \
+ /usr/local/include/CGAL/license/Polygon_mesh_processing.h \
+ /usr/local/include/CGAL/Polygon_mesh_processing/orient_polygon_soup.h \
+ /usr/local/include/CGAL/license/Polygon_mesh_processing/orientation.h \
+ /usr/include/boost/container/flat_set.hpp \
+ /usr/local/include/CGAL/Polygon_mesh_processing/polygon_soup_to_polygon_mesh.h \
+ /usr/local/include/CGAL/license/Polygon_mesh_processing/combinatorial_repair.h \
+ /usr/include/boost/dynamic_bitset.hpp \
+ /usr/include/boost/dynamic_bitset/dynamic_bitset.hpp \
+ /usr/include/boost/dynamic_bitset/config.hpp \
+ /usr/include/boost/dynamic_bitset_fwd.hpp \
+ /usr/include/boost/dynamic_bitset/detail/dynamic_bitset.hpp \
+ /usr/include/boost/dynamic_bitset/detail/lowest_bit.hpp \
+ /usr/include/boost/functional/hash/hash.hpp \
+ /usr/include/boost/range/reference.hpp \
+ /usr/local/include/CGAL/Polygon_mesh_processing/repair_polygon_soup.h \
+ /usr/local/include/CGAL/Polygon_mesh_processing/internal/named_params_helper.h \
+ /usr/local/include/CGAL/license/Polygon_mesh_processing/core.h \
+ /usr/include/boost/range.hpp /usr/include/boost/range/metafunctions.hpp \
+ /usr/include/boost/range/result_iterator.hpp \
+ /usr/include/boost/range/const_reverse_iterator.hpp \
+ /usr/include/boost/range/reverse_result_iterator.hpp \
+ /usr/include/boost/range/category.hpp \
+ /usr/include/boost/range/pointer.hpp \
+ /usr/include/boost/range/iterator_range.hpp \
+ /usr/include/boost/range/iterator_range_io.hpp \
+ /usr/include/boost/range/sub_range.hpp \
+ /usr/local/include/CGAL/IO/polygon_soup_io.h \
+ /usr/local/include/CGAL/point_generators_3.h \
+ /usr/local/include/CGAL/generators.h \
+ /usr/local/include/CGAL/point_generators_2.h \
+ /usr/local/include/CGAL/Generator/internal/Generic_random_point_generator.h \
+ /usr/local/include/CGAL/Triangulation_3.h \
+ /usr/local/include/CGAL/license/Triangulation_3.h \
+ /usr/local/include/CGAL/Triangulation_utils_3.h \
+ /usr/local/include/CGAL/license/TDS_3.h \
+ /usr/local/include/CGAL/Triangulation_data_structure_3.h \
+ /usr/include/boost/unordered_set.hpp \
+ /usr/include/boost/unordered/unordered_set.hpp \
+ /usr/include/boost/unordered/detail/set.hpp \
+ /usr/include/boost/unordered/detail/implementation.hpp \
+ /usr/include/boost/core/pointer_traits.hpp \
+ /usr/include/boost/unordered/detail/fwd.hpp \
+ /usr/include/boost/unordered/unordered_set_fwd.hpp \
+ /usr/local/include/CGAL/STL_Extension/internal/Has_member_visited.h \
+ /usr/local/include/CGAL/Concurrent_compact_container.h \
+ /usr/local/include/CGAL/Small_unordered_map.h \
+ /usr/local/include/CGAL/Triangulation_ds_cell_base_3.h \
+ /usr/local/include/CGAL/TDS_3/internal/Dummy_tds_3.h \
+ /usr/local/include/CGAL/Triangulation_ds_vertex_base_3.h \
+ /usr/local/include/CGAL/Triangulation_simplex_3.h \
+ /usr/local/include/CGAL/TDS_3/internal/Triangulation_ds_iterators_3.h \
+ /usr/local/include/CGAL/TDS_3/internal/Triangulation_ds_circulators_3.h \
+ /usr/local/include/CGAL/Triangulation_cell_base_3.h \
+ /usr/local/include/CGAL/Triangulation_vertex_base_3.h \
+ /usr/local/include/CGAL/spatial_sort.h \
+ /usr/local/include/CGAL/hilbert_sort.h \
+ /usr/local/include/CGAL/Hilbert_policy_tags.h \
+ /usr/local/include/CGAL/Hilbert_sort_2.h \
+ /usr/local/include/CGAL/Hilbert_sort_median_2.h \
+ /usr/local/include/CGAL/Hilbert_sort_base.h \
+ /usr/local/include/CGAL/Hilbert_sort_middle_2.h \
+ /usr/local/include/CGAL/Hilbert_sort_middle_base.h \
+ /usr/local/include/CGAL/Hilbert_sort_3.h \
+ /usr/local/include/CGAL/Hilbert_sort_median_3.h \
+ /usr/local/include/CGAL/Hilbert_sort_middle_3.h \
+ /usr/local/include/CGAL/Hilbert_sort_d.h \
+ /usr/local/include/CGAL/Hilbert_sort_median_d.h \
+ /usr/local/include/CGAL/Hilbert_sort_middle_d.h \
+ /usr/local/include/CGAL/Multiscale_sort.h \
+ /usr/local/include/CGAL/Spatial_sort_traits_adapter_3.h \
+ /usr/local/include/CGAL/Triangulation_segment_traverser_3.h \
+ /usr/local/include/CGAL/Triangulation_3/internal/Triangulation_segment_traverser_3_impl.h \
+ /usr/local/include/CGAL/Iterator_project.h \
+ /usr/local/include/CGAL/Spatial_lock_grid_3.h \
+ /usr/include/boost/property_map/function_property_map.hpp \
+ /usr/include/boost/unordered_map.hpp \
+ /usr/include/boost/unordered/unordered_map.hpp \
+ /usr/include/boost/unordered/detail/map.hpp \
+ /usr/include/boost/unordered/unordered_map_fwd.hpp \
+ /usr/local/include/CGAL/STL_Extension/internal/info_check.h \
  /usr/include/boost/iterator/zip_iterator.hpp \
  /usr/include/boost/iterator/minimum_category.hpp \
  /usr/include/boost/fusion/adapted/boost_tuple.hpp \
@@ -1904,30 +2567,41 @@ CMakeFiles/hw02.dir/src/main.cpp.o: /mnt/d/Q3/modelling/hw2/src/main.cpp \
  /usr/include/boost/fusion/sequence/comparison/detail/equal_to.hpp \
  /usr/include/boost/fusion/support/as_const.hpp \
  /usr/include/boost/fusion/sequence/comparison/enable_comparison.hpp \
- /usr/include/CGAL/internal/info_check.h \
- /usr/include/CGAL/Constrained_triangulation_face_base_2.h \
+ /usr/local/include/CGAL/Constrained_Delaunay_triangulation_2.h \
+ /usr/local/include/CGAL/license/Triangulation_2.h \
+ /usr/local/include/CGAL/Constrained_triangulation_2.h \
+ /usr/local/include/CGAL/Triangulation_2.h \
+ /usr/local/include/CGAL/Triangulation_vertex_base_2.h \
+ /usr/local/include/CGAL/Triangulation_face_base_2.h \
+ /usr/local/include/CGAL/Triangulation_2/internal/Triangulation_line_face_circulator_2.h \
+ /usr/local/include/CGAL/Spatial_sort_traits_adapter_2.h \
+ /usr/local/include/CGAL/Constrained_triangulation_face_base_2.h \
+ /usr/local/include/CGAL/Exact_rational.h \
  /usr/include/boost/iterator/filter_iterator.hpp \
- /usr/include/CGAL/Triangulation_2/insert_constraints.h \
- /usr/include/CGAL/boost/iterator/counting_iterator.hpp \
- /usr/include/boost/iterator/counting_iterator.hpp \
- /usr/include/boost/detail/numeric_traits.hpp \
- /usr/include/CGAL/linear_least_squares_fitting_3.h \
- /usr/include/CGAL/license/Principal_component_analysis.h \
- /usr/include/CGAL/linear_least_squares_fitting_points_3.h \
- /usr/include/CGAL/centroid.h /usr/include/CGAL/Kernel/Dimension_utils.h \
- /usr/include/CGAL/PCA_util.h /usr/include/CGAL/Linear_algebraCd.h \
- /usr/include/CGAL/Kernel_d/Vector__.h /usr/include/CGAL/Kernel_d/debug.h \
- /usr/include/CGAL/Kernel_d/Matrix__.h \
- /usr/include/CGAL/Kernel_d/Linear_algebraCd_impl.h \
- /usr/include/CGAL/linear_least_squares_fitting_segments_3.h \
- /usr/include/CGAL/linear_least_squares_fitting_triangles_3.h \
- /usr/include/CGAL/linear_least_squares_fitting_cuboids_3.h \
- /usr/include/CGAL/linear_least_squares_fitting_tetrahedra_3.h \
- /usr/include/CGAL/linear_least_squares_fitting_spheres_3.h \
- /usr/include/CGAL/Default_diagonalize_traits.h \
- /usr/include/CGAL/Diagonalize_traits.h \
- /usr/include/CGAL/Triangulation_vertex_base_with_id_2.h \
- /usr/include/CGAL/Triangulation_face_base_with_info_2.h \
+ /usr/local/include/CGAL/Triangulation_2/insert_constraints.h \
+ /usr/local/include/CGAL/linear_least_squares_fitting_3.h \
+ /usr/local/include/CGAL/license/Principal_component_analysis.h \
+ /usr/local/include/CGAL/linear_least_squares_fitting_points_3.h \
+ /usr/local/include/CGAL/centroid.h \
+ /usr/local/include/CGAL/Kernel/Dimension_utils.h \
+ /usr/local/include/CGAL/PCA_util.h \
+ /usr/local/include/CGAL/Linear_algebraCd.h \
+ /usr/local/include/CGAL/Kernel_d/Vector__.h \
+ /usr/local/include/CGAL/Kernel_d/debug.h \
+ /usr/local/include/CGAL/Kernel_d/Matrix__.h \
+ /usr/local/include/CGAL/Kernel_d/Linear_algebraCd_impl.h \
+ /usr/local/include/CGAL/PCA_util_Eigen.h \
+ /usr/local/include/CGAL/Eigen_diagonalize_traits.h \
+ /usr/include/eigen3/Eigen/Eigenvalues \
+ /usr/local/include/CGAL/Default_diagonalize_traits.h \
+ /usr/local/include/CGAL/Subiterator.h \
+ /usr/local/include/CGAL/linear_least_squares_fitting_segments_3.h \
+ /usr/local/include/CGAL/linear_least_squares_fitting_triangles_3.h \
+ /usr/local/include/CGAL/linear_least_squares_fitting_cuboids_3.h \
+ /usr/local/include/CGAL/linear_least_squares_fitting_tetrahedra_3.h \
+ /usr/local/include/CGAL/linear_least_squares_fitting_spheres_3.h \
+ /usr/local/include/CGAL/Triangulation_vertex_base_with_id_2.h \
+ /usr/local/include/CGAL/Triangulation_face_base_with_info_2.h \
  /mnt/d/Q3/modelling/hw2/src/geomtools.h \
  /mnt/d/Q3/modelling/hw2/include/json.hpp /usr/include/c++/9/forward_list \
  /usr/include/c++/9/bits/forward_list.h \

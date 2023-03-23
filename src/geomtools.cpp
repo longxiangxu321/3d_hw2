@@ -199,12 +199,13 @@ double cal_distance(const std::vector<int> tri, const std::vector<Point3>& lspts
     return dist;
 }
 
-std::vector<double> calculate_volume_area(const std::vector<std::vector<std::vector<int>>> trss,
-                                          const std::vector<Point3>& lspts) {
+std::pair<std::vector<double>, std::vector<double>> calculate_volume_area(const std::vector<std::vector<std::vector<int>>> trss,
+                                                                          const std::vector<Point3>& lspts) {
     int bp_index = trss[0][0][0];
     Point3 bp = lspts[bp_index];
     double volume = 0;
     double area = 0;
+    std::vector<double> area_list;
     for (auto trs:trss) {
         for (auto& tri:trs) {
             double tri_area = cal_area(tri, lspts);
@@ -212,10 +213,162 @@ std::vector<double> calculate_volume_area(const std::vector<std::vector<std::vec
             int orient = cal_orientation(tri,lspts,bp);
             volume += orient * tri_area * distance/3;
             area += tri_area;
+            //save area of every triangle for later
+            area_list.push_back(tri_area);
         }
     }
     std::vector<double> result;
     result.push_back(volume);
     result.push_back(area);
-    return result;
+    return make_pair(result,area_list);
+}
+
+double hemisphericality(double volume,double area){
+    double hem = (3 * sqrt(2*M_PI) * volume) / pow(area,1.5);
+    return hem;
+}
+
+//caculate distance of a point to center point
+double pt_to_center(Point3 pt,double x,double y,double z){
+    double distance = sqrt(pow((pt.x() - x),2)+ pow((pt.y() - y),2)+pow((pt.z() - z),2));
+    return distance;
+}
+//caculate the distance to center of the building
+double distance_to_center(double area,const std::vector<double> area_list,const std::vector<std::vector<std::vector<int>>> trss,
+                          const std::vector<Point3>& lspts){
+    //caculate the center of the building
+    //The weight of each triangle's center based on the its area / all trianles' area
+    std::vector<double> weights;
+    for (auto each_area:area_list) {
+        double weight = each_area / area;
+        weights.push_back(weight);
+    }
+    std::vector<std::vector<double>> tri_centers;//center of each triangle
+    std::vector<std::vector<Point3>> randompts;
+    for (auto trs:trss) {
+        for (auto& tri:trs) {
+            std::vector<double> tri_center;
+            Point3 p1 = lspts[tri[0]];
+            Point3 p2 = lspts[tri[1]];
+            Point3 p3 = lspts[tri[2]];
+            tri_center.push_back((p1.x() + p2.x() + p3.x()) / 3.0);
+            tri_center.push_back((p1.y() + p2.y() + p3.y()) / 3.0);
+            tri_center.push_back((p1.z() + p2.z() + p3.z()) / 3.0);
+            tri_centers.push_back(tri_center);
+            // Define the Random_points_in_triangle_3 generator
+            CGAL::Random_points_in_triangle_3<Point3> generator(p1, p2, p3);
+            // Generate 2 random points within the triangle
+            std::vector<Point3> randompt;
+            CGAL::copy_n(generator, 2, std::back_inserter(randompt));
+            randompts.push_back(randompt);
+        }
+    }
+    //center of the building
+    double x,y,z;
+    x = y = z =0;
+    //caculate the center of the building with weights
+    for (int i =0; i < weights.size(); i++){
+        x+=tri_centers[i][0]*weights[i];
+        y+=tri_centers[i][1]*weights[i];
+        z+=tri_centers[i][2]*weights[i];
+    }
+    double distance_sum;//the average distance of points sampled to the center
+    for (int i =0; i < weights.size(); i++){
+        Point3 pt1 = randompts[i][0];
+        Point3 pt2 = randompts[i][1];
+        //caculate the avg distance of two random points to center
+//        std::cout << x<<" " << y <<" "<<z<<std::endl;
+//        std::cout << pt1.x()<<" " << pt1.y() <<" "<<pt1.z()<<std::endl;
+        double dist = (pt_to_center(pt1,x,y,z) +pt_to_center(pt2,x,y,z))/2;
+//        std::cout << dist<<std::endl;
+        distance_sum+= dist * weights[i];
+    }
+    return distance_sum;
+}
+
+double Roughness_index(double volume,double area,const std::vector<double> area_list,const std::vector<std::vector<std::vector<int>>> trss,
+                       const std::vector<Point3>& lspts){
+    double down = pow(area, 1.5) + volume;
+    double distance_sum = distance_to_center(area,area_list,trss,lspts);
+    double ri = pow(distance_sum,3) * 48.735 /down;
+    return ri;
+}
+
+double calculate_rectangularity(const std::vector<Point3> exterior_pts, double vol){
+    // Compute the optimal bounding box, and return the 8 coordinates of the cube
+    std::array<Point3, 8> obb_points;
+    CGAL::oriented_bounding_box(exterior_pts, obb_points, CGAL::parameters::use_convex_hull(true));
+
+    // Calculate the volume of the oobb
+    double length = sqrt(squared_distance(obb_points[1], obb_points[0]));
+    double width = sqrt(squared_distance(obb_points[2], obb_points[1]));
+    double hight = sqrt(squared_distance(obb_points[7], obb_points[2]));
+    double volume_oobb = length * width * hight;
+
+    // compute the rectangularity
+    double rectangularity = vol / volume_oobb;
+
+    // varify whether the rectangularity is in the interval of [0, 1]
+    if (rectangularity > 1){
+        std::cout << "Rectangularity is greater than 1" << std::endl;
+    }
+    else if(rectangularity < 0){
+        std::cout << "Rectangularity is negative" << std::endl;
+    }
+    else{
+        return rectangularity;
+    }
+}
+
+std::string roof_orientation(const std::vector<int> tri, const std::vector<Point3>& lspts){
+    // compute the normal vector of the selected triangle
+    Point3 p1 = lspts[tri[0]];
+    Point3 p2 = lspts[tri[1]];
+    Point3 p3 = lspts[tri[2]];
+
+    Vector3 v1 = p2 - p1;
+    Vector3 v2 = p3 - p1;
+
+    Vector3 cross = CGAL::cross_product(v2, v1);
+
+    K::FT a = cross.x();
+    K::FT b = cross.y();
+
+    double cos = a / (sqrt(pow(a, 2) + pow(b, 2)));
+    double sin = b / (sqrt(pow(a, 2) + pow(b, 2)));
+    double tan = b / a;
+
+    if (tan >= 1 && cos > 0 && sin > 0){
+        return {"NE"};
+    }
+    else if (tan >= 1 && cos < 0 && sin < 0){
+        return {"SW"};
+    }
+    else if (0 <= tan && tan < 1 && cos > 0 && sin >= 0){
+        return {"EN"};
+    }
+    else if (0 <= tan && tan < 1 && cos < 0 && sin <= 0){
+        return {"WS"};
+    }
+    else if (0 > tan && tan >= -1 && cos > 0 && sin < 0){
+        return {"ES"};
+    }
+    else if (0 > tan && tan >= -1 && cos < 0 && sin > 0){
+        return {"WN"};
+    }
+    else if (tan < -1 && cos > 0 && sin < 0){
+        return {"SE"};
+    }
+    else if (cos == 0 && sin < 0){ // South
+        return {"SE"};
+    }
+    else if (tan < -1 && cos < 0 && sin > 0){
+        return {"NW"};
+    }
+    else if (cos == 0 && sin > 0){ // North
+        return {"NW"};
+    }
+    else if (a == 0 && b == 0){
+        return {"horizontal"};
+    }
 }
