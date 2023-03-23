@@ -21,6 +21,6 @@ double Roughness_index(double volume,double area,const std::vector<double> area_
                        const std::vector<Point3>& lspts);
 
 double calculate_rectangularity(const std::vector<Point3> exterior_pts, double vol);
-std::string roof_orientation(const std::vector<int> tri, const std::vector<Point3>& lspts);
+std::pair<int, std::string> roof_orientation(const std::vector<int> tri, const std::vector<Point3>& lspts);
 
 #endif 

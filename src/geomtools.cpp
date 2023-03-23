@@ -219,21 +219,6 @@ std::pair<std::vector<double>, std::vector<double>> calculate_volume_area(const 
     return make_pair(result,area_list);
 }
 
-//double rectangularity(double volume,const std::vector<std::vector<std::vector<int>>> trss,const std::vector<Point3>& lspts){
-//    std::vector<Point3> point_list;
-//    for (auto trs:trss) {
-//        for (auto& tri:trs) {
-//            for (auto& index:tri){
-//                Point3 mesh_pt = lspts[index];
-//                point_list.push_back(mesh_pt);
-//            }
-//        }
-//    }
-//    Surface_mesh sm;
-//    std::array<Point3, 8> obb_points;
-//    CGAL::oriented_bounding_box(sm, obb_points);
-//
-//}
 double hemisphericality(double volume,double area){
     double hem = (3 * sqrt(2*M_PI) * volume) / pow(area,1.5);
     return hem;
@@ -331,7 +316,8 @@ double calculate_rectangularity(const std::vector<Point3> exterior_pts, double v
     }
 }
 
-std::string roof_orientation(const std::vector<int> tri, const std::vector<Point3>& lspts){
+std::pair<int, std::string> roof_orientation(const std::vector<int> tri, const std::vector<Point3>& lspts){
+    std::pair <int, std::string> orientation;
     // compute the normal vector of the selected triangle
     Point3 p1 = lspts[tri[0]];
     Point3 p2 = lspts[tri[1]];
@@ -340,46 +326,51 @@ std::string roof_orientation(const std::vector<int> tri, const std::vector<Point
     Vector3 v1 = p2 - p1;
     Vector3 v2 = p3 - p1;
 
-    Vector3 cross = CGAL::cross_product(v1, v2);
+    Vector3 cross =  CGAL::cross_product(v1, v2);
 
-    K::FT a = cross.x();
-    K::FT b = cross.y();
+    K::FT x = cross.x();
+    K::FT y = cross.y();
 
-    double cos = a / (sqrt(pow(a, 2) + pow(b, 2)));
-    double sin = b / (sqrt(pow(a, 2) + pow(b, 2)));
-    double tan = b / a;
+    // compute horizontal threshold
+    double param = 1.0;  // the angle between the normal vector of the ct and the xy_plane > 1 degree, not horizontal
+    double cos_thr = cos( param * M_PI / 180.0);
+    Vector3  planar_v = {1, 1, 0};
+    double threshold = sqrt(cross.squared_length()) * sqrt(planar_v.squared_length()) * cos_thr;
+    double compare_scalar = CGAL::scalar_product(cross, planar_v);
+    double tan = y / x;
 
-    if (tan >= 1 && cos > 0 && sin > 0){
-        return {"NE"};
+    if (x == 0 && y > 0){ // North, value = 5
+        orientation= std::make_pair(1, "NE");
     }
-    else if (tan >= 1 && cos < 0 && sin < 0){
-        return {"SW"};
+    else if (x == 0 && y < 0){ // South, value = 6
+        orientation= std::make_pair(2, "SW");
     }
-    else if (0 <= tan && tan < 1 && cos > 0 && sin >= 0){
-        return {"EN"};
+    else if (x > 0 && y > 0 && tan >= 1){              // value = 5
+        orientation= std::make_pair(1, "NE");
     }
-    else if (0 <= tan && tan < 1 && cos < 0 && sin <= 0){
-        return {"WS"};
+    else if (x < 0 && y < 0 && tan >= 1){              // value = 6
+        orientation= std::make_pair(2, "SW");
     }
-    else if (0 > tan && tan >= -1 && cos > 0 && sin < 0){
-        return {"ES"};
+    else if (x > 0 && y >= 0 && tan >= 0 && tan < 1){  // value = 7
+        orientation= std::make_pair(3, "EN");
     }
-    else if (0 > tan && tan >= -1 && cos < 0 && sin > 0){
-        return {"WN"};
+    else if (x < 0 && y <= 0 && tan >= 0 && tan < 1){  // value = 8
+        orientation= std::make_pair(4, "WS");
     }
-    else if (tan < -1 && cos > 0 && sin < 0){
-        return {"SE"};
+    else if (x > 0 && y < 0 && tan < 0 && tan >= -1){  // value = 9
+        orientation= std::make_pair(5, "ES");
     }
-    else if (cos == 0 && sin < 0){ // South
-        return {"SE"};
+    else if (x < 0 && y > 0 && tan < 0 && tan >= -1){  // value = 10
+        orientation= std::make_pair(6, "WN");
     }
-    else if (tan < -1 && cos < 0 && sin > 0){
-        return {"NW"};
+    else if (x > 0 && y < 0 && tan < -1){              // value = 11
+        orientation= std::make_pair(7, "SE");
     }
-    else if (cos == 0 && sin > 0){ // North
-        return {"NW"};
+    else if (x < 0 && y > 0 && tan < -1){              // value = 12
+        orientation= std::make_pair(8, "NW");
     }
-    else if (a == 0 && b == 0){
-        return {"horizontal"};
+    else  { // value = 13, in case the face is slightly not horizontal
+        orientation= std::make_pair(9, "horizontal");
     }
+    return orientation;
 }

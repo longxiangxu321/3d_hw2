@@ -78,59 +78,101 @@ void enrich_and_save(std::string filename, json& j) {
     //-- https://en.cppreference.com/w/cpp/numeric/random/uniform_real_distribution
 
     std::vector<Point3> lspts = get_coordinates(j, true);
-
-    for (auto& co : j["CityObjects"].items()) {    //.items() return the key-value pairs belong to the CityObjects
-//        std::cout << co.key() << std::endl;
+    std::map<std::string, int> faces_with_orientation = {{"NE",         1},
+                                                         {"SW",         2},
+                                                         {"EN",         3},
+                                                         {"WS",         4},
+                                                         {"ES",         5},
+                                                         {"WN",         6},
+                                                         {"SE",         7},
+                                                         {"NW",         8},
+                                                         {"horizontal", 9}};
+    for (auto &co: j["CityObjects"].items()) {    //.items() return the key-value pairs belong to the CityObjects
         if (co.value()["type"] == "BuildingPart") {
+            std::vector<std::vector<std::vector<int>>> trss;
+            std::vector<Point3> exterior_pts;
             for (auto &g: co.value()["geometry"]) {
-                std::vector<std::vector<std::vector<int>>> trss;
-                std::vector<Point3> exterior_pts;
+
+
+                auto origin_surface_num = g["semantics"]["surfaces"].size();
+                for (const auto &ori: faces_with_orientation) {
+                    json new_surface = {
+                            {"type",        "RoofSurface"},
+                            {"Orientation", ori.first}
+                    };
+                    g["semantics"]["surfaces"].push_back(new_surface);
+                }
+
                 for (int i = 0; i < g["boundaries"].size(); i++) { //-- iterate over each shell
                     for (int j = 0; j < g["boundaries"][i].size(); j++) {  // iterate over each face
                         std::vector<std::vector<int>> gb = g["boundaries"][i][j];
                         std::vector<std::vector<int>> trs = construct_ct_one_face(gb, lspts);
                         trss.push_back(trs);
-                        if (g["semantics"]["value"] == 1){ // extract roof surface ct
-                            std::string ori = roof_orientation(trs[0], lspts);
-//                            g["semantics"]["type"] = {"RoofSurface", ori};
+                        if (g["semantics"]["values"][0][j] == 1) { // extract roof surface ct
+                            if (trs.size() < 1) {
+                                continue;
+                            } else {
+                                std::pair<int, std::string> orient = roof_orientation(trs[0], lspts);
+                                g["semantics"]["values"][0][j] =
+                                        orient.first + origin_surface_num - 1;
+                            }
                         }
                     }
                 }
-                // for extracting the exterior of a building_part as an input for the obb function
-                for (auto & ex_faces : g["boundaries"][0]){ // extract the exterior shell only
-                    for (auto & ex_face : ex_faces){  // iterate over each face of exterior shell
-                        for (int i = 0; i < ex_face.size(); i++){ // iterate over the pt_index of each face
+
+                for (auto &ex_faces: g["boundaries"][0]) { // extract the exterior shell only
+                    for (auto &ex_face: ex_faces) {  // iterate over each face of exterior shell
+                        for (int i = 0; i < ex_face.size(); i++) { // iterate over the pt_index of each face
                             Point3 exterior_pt = lspts[ex_face[i]];
                             exterior_pts.push_back(exterior_pt);
                         }
                     }
                 }
 
+
+
                 std::pair<std::vector<double>, std::vector<double>> pair = calculate_volume_area(trss, lspts);
                 std::vector<double> vol = pair.first;
                 std::vector<double> area_list = pair.second;
                 double rec = calculate_rectangularity(exterior_pts, vol[0]);
-                double hem = hemisphericality(vol[0],vol[1]);
-                double ri = Roughness_index(vol[0],vol[1],area_list,trss,lspts);
-//                std::cout << "volume:" << vol[0] <<std::endl;
-//                std::cout << "area:" << vol[1] <<std::endl;
-//                std::cout << "rectangularity:" << rec <<std::endl;
+                double hem = hemisphericality(vol[0], vol[1]);
+                double ri = Roughness_index(vol[0], vol[1], area_list, trss, lspts);
                 co.value()["attributes"]["volume"] = vol[0];
                 co.value()["attributes"]["area"] = vol[1];
                 co.value()["attributes"]["rectangularity"] = rec;
                 co.value()["attributes"]["hemisphericality"] = hem;
                 co.value()["attributes"]["roughness"] = ri;
-
             }
         }
     }
 
+    for (auto &co: j["CityObjects"].items()) {    //.items() return the key-value pairs belong to the CityObjects
+        if (co.value()["type"] == "Building") {
+//            std::cout <<"1" <<std::endl;
+            if (co.value()["children"].size()<1) {
+                continue;
+            }
+            else {
+                std::string child_name = co.value()["children"][0];
+                auto child = j["CityObjects"].find(child_name);
+                co.value()["attributes"]["volume"] = child.value()["attributes"]["volume"];
+                co.value()["attributes"]["rectangularity"] = child.value()["attributes"]["rectangularity"];
+                co.value()["attributes"]["hemisphericality"] = child.value()["attributes"]["hemisphericality"];
+                co.value()["attributes"]["roughness"] = child.value()["attributes"]["roughness"];
+                child.value()["attributes"].erase("volume");
+                child.value()["attributes"].erase("rectangularity");
+                child.value()["attributes"].erase("hemisphericality");
+                child.value()["attributes"].erase("roughness");
+            }
+        }
+    }
 
     //-- write to disk the modified city model (myfile.city.json)
     std::ofstream o(filename);
     o << j.dump(2) << std::endl;
     o.close();
     std::cout << "Enriched CityJSON file written to disk: " << filename << std::endl;
+
 }
 
 
