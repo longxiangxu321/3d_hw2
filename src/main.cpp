@@ -78,17 +78,18 @@ void enrich_and_save(std::string filename, json& j) {
     //-- https://en.cppreference.com/w/cpp/numeric/random/uniform_real_distribution
 
     std::vector<Point3> lspts = get_coordinates(j, true);
-    std::map<std::string, int> faces_with_orientation = {{"NE",         1},
-                                                         {"SW",         2},
-                                                         {"EN",         3},
-                                                         {"WS",         4},
-                                                         {"ES",         5},
-                                                         {"WN",         6},
-                                                         {"SE",         7},
-                                                         {"NW",         8},
-                                                         {"horizontal", 9}};
+    std::map<int, std::string> faces_with_orientation = {{0,         "NE"},
+                                                         {1,         "SW"},
+                                                         {2,         "EN"},
+                                                         {3,         "WS"},
+                                                         {4,         "ES"},
+                                                         {5,         "WN"},
+                                                         {6,         "SE"},
+                                                         {7,         "NW"},
+                                                         {8, "horizontal"}};
     for (auto &co: j["CityObjects"].items()) {    //.items() return the key-value pairs belong to the CityObjects
         if (co.value()["type"] == "BuildingPart") {
+//            std::cout << co.key() << std::endl;
             std::vector<std::vector<std::vector<int>>> trss;
             std::vector<Point3> exterior_pts;
             for (auto &g: co.value()["geometry"]) {
@@ -98,7 +99,7 @@ void enrich_and_save(std::string filename, json& j) {
                 for (const auto &ori: faces_with_orientation) {
                     json new_surface = {
                             {"type",        "RoofSurface"},
-                            {"Orientation", ori.first}
+                            {"Orientation", ori.second}
                     };
                     g["semantics"]["surfaces"].push_back(new_surface);
                 }
@@ -108,13 +109,12 @@ void enrich_and_save(std::string filename, json& j) {
                         std::vector<std::vector<int>> gb = g["boundaries"][i][j];
                         std::vector<std::vector<int>> trs = construct_ct_one_face(gb, lspts);
                         trss.push_back(trs);
-                        if (g["semantics"]["values"][0][j] == 1) { // extract roof surface ct
+                        if (g["semantics"]["values"][0][j] == 1) { // extract roof surface cts
                             if (trs.size() < 1) {
                                 continue;
                             } else {
                                 std::pair<int, std::string> orient = roof_orientation(trs[0], lspts);
-                                g["semantics"]["values"][0][j] =
-                                        orient.first + origin_surface_num - 1;
+                                g["semantics"]["values"][0][j] = origin_surface_num + orient.first;
                             }
                         }
                     }

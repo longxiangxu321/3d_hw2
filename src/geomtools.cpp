@@ -331,46 +331,58 @@ std::pair<int, std::string> roof_orientation(const std::vector<int> tri, const s
     K::FT x = cross.x();
     K::FT y = cross.y();
 
-    // compute horizontal threshold
-    double param = 1.0;  // the angle between the normal vector of the ct and the xy_plane > 1 degree, not horizontal
-    double cos_thr = cos( param * M_PI / 180.0);
-    Vector3  planar_v = {1, 1, 0};
-    double threshold = sqrt(cross.squared_length()) * sqrt(planar_v.squared_length()) * cos_thr;
-    double compare_scalar = CGAL::scalar_product(cross, planar_v);
     double tan = y / x;
 
-    if (x == 0 && y > 0){ // North, value = 5
-        orientation= std::make_pair(1, "NE");
+    if (abs(x) <= 0.0001 && abs(y) <= 0.0001) {
+        orientation= std::make_pair(8, "horizontal");
     }
-    else if (x == 0 && y < 0){ // South, value = 6
-        orientation= std::make_pair(2, "SW");
+    else if (abs(x) <= 0.0001 && y > 0){ // North
+        if (tan > 1) {
+            orientation = std::make_pair(0, "NE");
+        }
+        else{
+            orientation = std::make_pair(7, "NW");
+        }
     }
-    else if (x > 0 && y > 0 && tan >= 1){              // value = 5
-        orientation= std::make_pair(1, "NE");
+    else if (abs(x) <= 0.0001 && y < 0){ // South
+        if (tan > 1) {
+            orientation = std::make_pair(1, "SW");
+        }
+        else{
+            orientation = std::make_pair(6, "SE");
+        }
     }
-    else if (x < 0 && y < 0 && tan >= 1){              // value = 6
-        orientation= std::make_pair(2, "SW");
+    else if ( x > 0 && y >= 0){
+        if (tan >= 1 ){
+            orientation = std::make_pair(0, "NE");
+        }
+        else{
+            orientation = std::make_pair(2, "EN");
+        }
     }
-    else if (x > 0 && y >= 0 && tan >= 0 && tan < 1){  // value = 7
-        orientation= std::make_pair(3, "EN");
+    else if ( x > 0 && y < 0){
+        if (tan >= -1 ){
+            orientation = std::make_pair(4, "ES");
+        }
+        else{
+            orientation = std::make_pair(6, "SE");
+        }
     }
-    else if (x < 0 && y <= 0 && tan >= 0 && tan < 1){  // value = 8
-        orientation= std::make_pair(4, "WS");
+    else if ( x < 0 && y <= 0){
+        if (tan >= 1 ){
+            orientation = std::make_pair(1, "SW");
+        }
+        else{
+            orientation = std::make_pair(3, "WS");
+        }
     }
-    else if (x > 0 && y < 0 && tan < 0 && tan >= -1){  // value = 9
-        orientation= std::make_pair(5, "ES");
-    }
-    else if (x < 0 && y > 0 && tan < 0 && tan >= -1){  // value = 10
-        orientation= std::make_pair(6, "WN");
-    }
-    else if (x > 0 && y < 0 && tan < -1){              // value = 11
-        orientation= std::make_pair(7, "SE");
-    }
-    else if (x < 0 && y > 0 && tan < -1){              // value = 12
-        orientation= std::make_pair(8, "NW");
-    }
-    else  { // value = 13, in case the face is slightly not horizontal
-        orientation= std::make_pair(9, "horizontal");
+    else if ( x < 0 && y > 0){
+        if (tan >= -1 ){
+            orientation = std::make_pair(5, "WN");
+        }
+        else{
+            orientation = std::make_pair(7, "NW");
+        }
     }
     return orientation;
 }
