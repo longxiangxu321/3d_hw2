@@ -54,7 +54,7 @@ To compile and run:
     $ cd build
     $ cmake ..
     $ make
-    $ ./hw02 myfile.city.json
+    $ ./hw02 ../data/myfile.city.json
 
 
 
