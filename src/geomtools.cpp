@@ -302,8 +302,8 @@ double calculate_rectangularity(const std::vector<Point3> exterior_pts, double v
     // Calculate the volume of the oobb
     double length = sqrt(squared_distance(obb_points[1], obb_points[0]));
     double width = sqrt(squared_distance(obb_points[2], obb_points[1]));
-    double hight = sqrt(squared_distance(obb_points[7], obb_points[2]));
-    double volume_oobb = length * width * hight;
+    double height = sqrt(squared_distance(obb_points[7], obb_points[2]));
+    double volume_oobb = length * width * height;
 
     // compute the rectangularity
     double rectangularity = vol / volume_oobb;
