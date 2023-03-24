@@ -111,8 +111,19 @@ void enrich_and_save(std::string filename, json& j) {
                         trss.push_back(trs);
                         if (g["semantics"]["values"][0][j] == 1) { // extract roof surface cts
                             if (trs.size() < 1) {
-                                continue;
-                            } else {
+                                // if face can't generate cdt then use best_fitting_plane's normal vector to determine
+                                // the orientation
+                                std::vector<Point3> face_pt;
+                                for (const auto& ring : gb){
+                                    for (int a = 0 ; a < ring.size(); a++){
+                                        face_pt.push_back(lspts[a]);
+                                    }
+                                }
+                                Plane ct_false = get_best_fitted_plane(face_pt);
+                                std::pair<int, std::string> orient = roof_orientation_cdt_false(ct_false);
+                                g["semantics"]["values"][0][j] = origin_surface_num + orient.first;
+                            }
+                            else {
                                 std::pair<int, std::string> orient = roof_orientation(trs[0], lspts);
                                 g["semantics"]["values"][0][j] = origin_surface_num + orient.first;
                             }
@@ -129,8 +140,6 @@ void enrich_and_save(std::string filename, json& j) {
                     }
                 }
 
-
-
                 std::pair<std::vector<double>, std::vector<double>> pair = calculate_volume_area(trss, lspts);
                 std::vector<double> vol = pair.first;
                 std::vector<double> area_list = pair.second;
@@ -142,9 +151,11 @@ void enrich_and_save(std::string filename, json& j) {
                 co.value()["attributes"]["rectangularity"] = rec;
                 co.value()["attributes"]["hemisphericality"] = hem;
                 co.value()["attributes"]["roughness"] = ri;
+
             }
         }
     }
+
 
     for (auto &co: j["CityObjects"].items()) {    //.items() return the key-value pairs belong to the CityObjects
         if (co.value()["type"] == "Building") {

@@ -386,3 +386,65 @@ std::pair<int, std::string> roof_orientation(const std::vector<int> tri, const s
     }
     return orientation;
 }
+
+std::pair<int, std::string> roof_orientation_cdt_false(Plane best_face){
+    std::pair <int, std::string> orientation;
+
+    K::FT x = best_face.a();
+    K::FT y = best_face.b();
+
+    double tan = y / x;
+
+    if (abs(x) <= 0.0001 && abs(y) <= 0.0001) {
+        orientation= std::make_pair(8, "horizontal");
+    }
+    else if (abs(x) <= 0.0001 && y > 0){ // North
+        if (tan > 1) {
+            orientation = std::make_pair(0, "NE");
+        }
+        else{
+            orientation = std::make_pair(7, "NW");
+        }
+    }
+    else if (abs(x) <= 0.0001 && y < 0){ // South
+        if (tan > 1) {
+            orientation = std::make_pair(1, "SW");
+        }
+        else{
+            orientation = std::make_pair(6, "SE");
+        }
+    }
+    else if ( x > 0 && y >= 0){
+        if (tan >= 1 ){
+            orientation = std::make_pair(0, "NE");
+        }
+        else{
+            orientation = std::make_pair(2, "EN");
+        }
+    }
+    else if ( x > 0 && y < 0){
+        if (tan >= -1 ){
+            orientation = std::make_pair(4, "ES");
+        }
+        else{
+            orientation = std::make_pair(6, "SE");
+        }
+    }
+    else if ( x < 0 && y <= 0){
+        if (tan >= 1 ){
+            orientation = std::make_pair(1, "SW");
+        }
+        else{
+            orientation = std::make_pair(3, "WS");
+        }
+    }
+    else if ( x < 0 && y > 0){
+        if (tan >= -1 ){
+            orientation = std::make_pair(5, "WN");
+        }
+        else{
+            orientation = std::make_pair(7, "NW");
+        }
+    }
+    return orientation;
+}
