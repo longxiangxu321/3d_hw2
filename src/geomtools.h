@@ -17,7 +17,7 @@ construct_ct_one_face(const std::vector<std::vector<int>>& lsRings,
 std::pair<std::vector<double>, std::vector<double>> calculate_volume_area(const std::vector<std::vector<std::vector<int>>> trss,
                              const std::vector<Point3>& lspts);
 std::pair<int, std::string> roof_orientation(const std::vector<int> tri, const std::vector<Point3>& lspts);
-
+std::pair<int, std::string> roof_orientation(Plane best_face);
 double hemisphericality(double volume,double area);
 double Roughness_index(double volume,double area,const std::vector<double> area_list,const std::vector<std::vector<std::vector<int>>> trss,
                        const std::vector<Point3>& lspts);

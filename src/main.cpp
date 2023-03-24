@@ -110,7 +110,17 @@ void enrich_and_save(std::string filename, json& j) {
                         trss.push_back(trs);
                         if (g["semantics"]["values"][0][j] == 1) { // extract roof surface ct
                             if (trs.size() < 1) {
-                                continue;
+                                // if face can't generate cdt then use best_fitting_plane's normal vector to determine
+                                // the orientation
+                                std::vector<Point3> face_pt;
+                                for (const auto& ring : gb){
+                                    for (int a = 0 ; a < ring.size(); a++){
+                                        face_pt.push_back(lspts[a]);
+                                    }
+                                }
+                                Plane ct_false = get_best_fitted_plane(face_pt);
+                                std::pair<int, std::string> orient = roof_orientation(ct_false);
+                                g["semantics"]["values"][0][j] = origin_surface_num + orient.first;
                             } else {
                                 std::pair<int, std::string> orient = roof_orientation(trs[0], lspts);
                                 g["semantics"]["values"][0][j] = origin_surface_num + orient.first;
