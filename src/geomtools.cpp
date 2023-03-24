@@ -320,7 +320,8 @@ double calculate_rectangularity(const std::vector<Point3> exterior_pts, double v
     }
 }
 
-std::string roof_orientation(const std::vector<int> tri, const std::vector<Point3>& lspts){
+std::pair<int, std::string> roof_orientation(const std::vector<int> tri, const std::vector<Point3>& lspts){
+    std::pair <int, std::string> orientation;
     // compute the normal vector of the selected triangle
     Point3 p1 = lspts[tri[0]];
     Point3 p2 = lspts[tri[1]];
@@ -329,46 +330,63 @@ std::string roof_orientation(const std::vector<int> tri, const std::vector<Point
     Vector3 v1 = p2 - p1;
     Vector3 v2 = p3 - p1;
 
-    Vector3 cross = CGAL::cross_product(v2, v1);
+    Vector3 cross =  CGAL::cross_product(v1, v2);
 
-    K::FT a = cross.x();
-    K::FT b = cross.y();
+    K::FT x = cross.x();
+    K::FT y = cross.y();
 
-    double cos = a / (sqrt(pow(a, 2) + pow(b, 2)));
-    double sin = b / (sqrt(pow(a, 2) + pow(b, 2)));
-    double tan = b / a;
+    double tan = y / x;
 
-    if (tan >= 1 && cos > 0 && sin > 0){
-        return {"NE"};
+    if (abs(x) <= 0.0001 && abs(y) <= 0.0001) {
+        orientation= std::make_pair(8, "horizontal");
     }
-    else if (tan >= 1 && cos < 0 && sin < 0){
-        return {"SW"};
+    else if (abs(x) <= 0.0001 && y > 0){ // North
+        if (tan > 1) {
+            orientation = std::make_pair(0, "NE");
+        }
+        else{
+            orientation = std::make_pair(7, "NW");
+        }
     }
-    else if (0 <= tan && tan < 1 && cos > 0 && sin >= 0){
-        return {"EN"};
+    else if (abs(x) <= 0.0001 && y < 0){ // South
+        if (tan > 1) {
+            orientation = std::make_pair(1, "SW");
+        }
+        else{
+            orientation = std::make_pair(6, "SE");
+        }
     }
-    else if (0 <= tan && tan < 1 && cos < 0 && sin <= 0){
-        return {"WS"};
+    else if ( x > 0 && y >= 0){
+        if (tan >= 1 ){
+            orientation = std::make_pair(0, "NE");
+        }
+        else{
+            orientation = std::make_pair(2, "EN");
+        }
     }
-    else if (0 > tan && tan >= -1 && cos > 0 && sin < 0){
-        return {"ES"};
+    else if ( x > 0 && y < 0){
+        if (tan >= -1 ){
+            orientation = std::make_pair(4, "ES");
+        }
+        else{
+            orientation = std::make_pair(6, "SE");
+        }
     }
-    else if (0 > tan && tan >= -1 && cos < 0 && sin > 0){
-        return {"WN"};
+    else if ( x < 0 && y <= 0){
+        if (tan >= 1 ){
+            orientation = std::make_pair(1, "SW");
+        }
+        else{
+            orientation = std::make_pair(3, "WS");
+        }
     }
-    else if (tan < -1 && cos > 0 && sin < 0){
-        return {"SE"};
+    else if ( x < 0 && y > 0){
+        if (tan >= -1 ){
+            orientation = std::make_pair(5, "WN");
+        }
+        else{
+            orientation = std::make_pair(7, "NW");
+        }
     }
-    else if (cos == 0 && sin < 0){ // South
-        return {"SE"};
-    }
-    else if (tan < -1 && cos < 0 && sin > 0){
-        return {"NW"};
-    }
-    else if (cos == 0 && sin > 0){ // North
-        return {"NW"};
-    }
-    else if (a == 0 && b == 0){
-        return {"horizontal"};
-    }
+    return orientation;
 }
